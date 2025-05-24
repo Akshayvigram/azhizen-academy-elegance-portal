@@ -35,6 +35,12 @@ const Navigation = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <button 
+              onClick={() => window.location.href = '/'}
+              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
+            >
+              Home
+            </button>
+            <button 
               onClick={() => scrollToSection('vision')}
               className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
             >
@@ -57,6 +63,12 @@ const Navigation = () => {
               className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
             >
               Programs
+            </button>
+            <button 
+              onClick={() => window.location.href = '/cohort-program'}
+              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
+            >
+              Cohort Program
             </button>
             <Button 
               onClick={() => window.location.href = '/contact'}
