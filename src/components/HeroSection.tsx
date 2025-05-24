@@ -11,6 +11,13 @@ const HeroSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const scrollToNext = () => {
     const nextSection = document.getElementById('vision');
     if (nextSection) {
@@ -49,17 +56,10 @@ const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <button 
-            onClick={() => window.location.href = '/contact'}
+            onClick={scrollToContact}
             className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
           >
-            Join Our Community
-          </button>
-          
-          <button 
-            onClick={scrollToNext}
-            className="border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-          >
-            Discover More
+            Join Our Cohort Program
           </button>
         </div>
       </div>

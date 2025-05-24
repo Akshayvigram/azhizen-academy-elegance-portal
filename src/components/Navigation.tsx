@@ -33,49 +33,19 @@ const Navigation = () => {
             Azhizen Academy
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => window.location.href = '/'}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('vision')}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
-            >
-              Vision
-            </button>
-            <button 
-              onClick={() => scrollToSection('mission')}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
-            >
-              Mission
-            </button>
-            <button 
-              onClick={() => scrollToSection('values')}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
-            >
-              Values
-            </button>
-            <button 
-              onClick={() => scrollToSection('programs')}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
-            >
-              Programs
-            </button>
+          <div className="flex items-center space-x-6">
             <button 
               onClick={() => window.location.href = '/cohort-program'}
               className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
             >
               Cohort Program
             </button>
-            <Button 
-              onClick={() => window.location.href = '/contact'}
-              className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
             >
-              Contact
-            </Button>
+              Contact Us
+            </button>
           </div>
         </div>
       </div>
