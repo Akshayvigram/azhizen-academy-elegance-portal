@@ -19,7 +19,7 @@ const ValuesSection = () => {
       title: "Integrity",
       description: "We uphold the highest ethical standards and foster honest, transparent relationships with all stakeholders.",
       icon: "🛡️",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+      image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Empowerment",
@@ -51,7 +51,7 @@ const ValuesSection = () => {
             >
               {/* Background Image on Hover */}
               <div 
-                className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-40 transition-all duration-300 group-hover:scale-110"
                 style={{ backgroundImage: `url(${value.image})` }}
               />
               

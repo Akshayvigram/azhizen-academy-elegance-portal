@@ -10,6 +10,7 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    mobile: '',
     message: ''
   });
 
@@ -17,7 +18,7 @@ const ContactSection = () => {
     e.preventDefault();
     console.log('Contact form submitted:', formData);
     // Reset form
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: '', email: '', mobile: '', message: '' });
     // You can add toast notification here
     alert('Thank you for your message! We will get back to you soon.');
   };
@@ -82,6 +83,17 @@ const ContactSection = () => {
                       type="email"
                       placeholder="Your Email"
                       value={formData.email}
+                      onChange={handleInputChange}
+                      className="bg-white/5 border-cream-300/30 text-white placeholder:text-cream-400 h-12"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      name="mobile"
+                      type="tel"
+                      placeholder="Mobile Number"
+                      value={formData.mobile}
                       onChange={handleInputChange}
                       className="bg-white/5 border-cream-300/30 text-white placeholder:text-cream-400 h-12"
                       required

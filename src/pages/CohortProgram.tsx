@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -8,6 +7,11 @@ import { CheckCircle, Calendar, Users, Award, Code, Shield, Brain, Layers } from
 
 const CohortProgram = () => {
   useScrollReveal();
+
+  const handleApplyNow = () => {
+    // Navigate to homepage contact section
+    window.location.href = '/#contact';
+  };
 
   const timelinePhases = [
     {
@@ -128,6 +132,7 @@ const CohortProgram = () => {
           </p>
           
           <Button 
+            onClick={handleApplyNow}
             className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow animate-fade-in-up"
             style={{animationDelay: '0.6s'}}
           >
@@ -343,6 +348,7 @@ const CohortProgram = () => {
             Applications are reviewed on a rolling basis. Early applications receive priority consideration.
           </p>
           <Button 
+            onClick={handleApplyNow}
             className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
           >
             Apply Now - Start Your Journey

@@ -15,9 +15,25 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    // If we're not on the home page, navigate to home first
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const navigateToHome = () => {
+    if (window.location.pathname === '/') {
+      // If already on home page, scroll to hero
+      scrollToSection('hero');
+    } else {
+      // Navigate to home page
+      window.location.href = '/';
     }
   };
 
@@ -35,7 +51,7 @@ const Navigation = () => {
           
           <div className="flex items-center space-x-6">
             <button 
-              onClick={() => scrollToSection('hero')}
+              onClick={navigateToHome}
               className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
             >
               Home
