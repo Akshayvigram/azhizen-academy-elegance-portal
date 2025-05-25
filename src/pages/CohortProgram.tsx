@@ -92,16 +92,8 @@ const CohortProgram = () => {
       answer: "The program spans across 4 semesters (3rd to 6th), with each phase building upon the previous one."
     },
     {
-      question: "Can I change my specialization track?",
-      answer: "Specialization selection happens in the 4th semester. While changes are possible, we recommend choosing based on your career goals."
-    },
-    {
       question: "Are the internships paid?",
       answer: "Yes, both internship opportunities are paid positions with our industry partners."
-    },
-    {
-      question: "What support is provided during internships?",
-      answer: "Each student is assigned a mentor who provides guidance throughout the internship period."
     },
     {
       question: "Is there any fee for the program?",

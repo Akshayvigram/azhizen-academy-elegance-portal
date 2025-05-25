@@ -46,21 +46,21 @@ const ValuesSection = () => {
           {values.map((value, index) => (
             <div 
               key={index}
-              className="scroll-reveal bg-white p-8 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
+              className="scroll-reveal bg-white p-8 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden border-2 border-transparent hover:border-gold-400"
               style={{animationDelay: `${index * 0.2}s`}}
             >
               {/* Background Image on Hover */}
               <div 
-                className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-40 transition-all duration-300 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110"
                 style={{ backgroundImage: `url(${value.image})` }}
               />
               
               <div className="relative z-10">
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{value.icon}</div>
-                <h3 className="font-serif text-2xl font-bold mb-4 text-royal-900">
+                <h3 className="font-serif text-2xl font-bold mb-4 text-royal-900 group-hover:text-white transition-colors duration-300">
                   {value.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed group-hover:text-white transition-colors duration-300">
                   {value.description}
                 </p>
               </div>
