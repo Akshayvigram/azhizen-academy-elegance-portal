@@ -25,8 +25,8 @@ const VisionSection = () => {
           <div className="scroll-reveal">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=2731&q=80"
-                alt="Vision"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2671&q=80"
+                alt="Vision - Students collaborating and learning together"
                 className="rounded-2xl luxury-shadow w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-royal-900/30 to-transparent rounded-2xl" />

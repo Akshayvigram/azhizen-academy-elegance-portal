@@ -218,8 +218,8 @@ export default {
 				'parallax': 'parallax 1s ease-out'
 			},
 			fontFamily: {
-				'serif': ['Playfair Display', 'serif'],
-				'sans': ['Inter', 'sans-serif']
+				'serif': ['Poppins', 'sans-serif'],
+				'sans': ['Poppins', 'sans-serif']
 			}
 		}
 	},

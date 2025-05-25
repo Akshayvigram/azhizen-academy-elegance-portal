@@ -6,22 +6,26 @@ const ValuesSection = () => {
     {
       title: "Excellence",
       description: "We pursue the highest standards in education, continuously raising the bar for academic and professional achievement.",
-      icon: "🎯"
+      icon: "🎯",
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Innovation",
       description: "We embrace cutting-edge methodologies and technologies to create dynamic learning experiences.",
-      icon: "💡"
+      icon: "💡",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80"
     },
     {
       title: "Integrity",
       description: "We uphold the highest ethical standards and foster honest, transparent relationships with all stakeholders.",
-      icon: "🛡️"
+      icon: "🛡️",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Empowerment",
       description: "We believe in unlocking human potential and providing tools for personal and professional growth.",
-      icon: "🚀"
+      icon: "🚀",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     }
   ];
 
@@ -42,16 +46,24 @@ const ValuesSection = () => {
           {values.map((value, index) => (
             <div 
               key={index}
-              className="scroll-reveal bg-white p-8 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300"
+              className="scroll-reveal bg-white p-8 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
               style={{animationDelay: `${index * 0.2}s`}}
             >
-              <div className="text-4xl mb-4">{value.icon}</div>
-              <h3 className="font-serif text-2xl font-bold mb-4 text-royal-900">
-                {value.title}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {value.description}
-              </p>
+              {/* Background Image on Hover */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                style={{ backgroundImage: `url(${value.image})` }}
+              />
+              
+              <div className="relative z-10">
+                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{value.icon}</div>
+                <h3 className="font-serif text-2xl font-bold mb-4 text-royal-900">
+                  {value.title}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -9,8 +9,8 @@ const MissionSection = () => {
           <div className="scroll-reveal order-2 lg:order-1">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=3847&q=80"
-                alt="Mission"
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2826&q=80"
+                alt="Mission - Future leaders and education growth"
                 className="rounded-2xl luxury-shadow w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl" />

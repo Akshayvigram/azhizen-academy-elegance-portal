@@ -35,6 +35,12 @@ const Navigation = () => {
           
           <div className="flex items-center space-x-6">
             <button 
+              onClick={() => scrollToSection('hero')}
+              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
+            >
+              Home
+            </button>
+            <button 
               onClick={() => window.location.href = '/cohort-program'}
               className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
             >

@@ -26,7 +26,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Parallax Background */}
       <div 
         className="absolute inset-0 bg-gradient-to-br from-black via-royal-950 to-maroon-950"
@@ -44,13 +44,13 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
-          <span className="text-gradient">Azhizen</span>
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+          <span className="text-gradient animate-fade-in-up">Azhizen</span>
           <br />
-          <span className="text-cream-100">Academy</span>
+          <span className="text-cream-100 animate-fade-in-up" style={{animationDelay: '0.2s'}}>Academy</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+        <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
           Elevating minds, shaping futures through excellence in education and transformative learning experiences
         </p>
         
@@ -60,6 +60,12 @@ const HeroSection = () => {
             className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
           >
             Join Our Cohort Program
+          </button>
+          <button 
+            onClick={() => window.location.href = '/cohort-program'}
+            className="bg-transparent border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+          >
+            Explore Cohort
           </button>
         </div>
       </div>
