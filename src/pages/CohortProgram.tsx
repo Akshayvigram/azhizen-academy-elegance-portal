@@ -49,28 +49,24 @@ const CohortProgram = () => {
       title: "Full Stack Development",
       description: "Master frontend and backend technologies to build complete web applications",
       tools: "React, Node.js, MongoDB, Express",
-      projects: "E-commerce Platform, Social Media App",
       icon: Code
     },
     {
       title: "AI/ML Engineering", 
       description: "Dive into machine learning, data science, and artificial intelligence",
       tools: "Python, TensorFlow, Scikit-learn, Pandas",
-      projects: "Recommendation System, Image Classifier",
       icon: Brain
     },
     {
       title: "Cybersecurity",
       description: "Learn ethical hacking, network security, and digital forensics",
       tools: "Kali Linux, Wireshark, Metasploit, OWASP",
-      projects: "Penetration Testing, Security Audit",
       icon: Shield
     },
     {
       title: "Cloud & DevOps",
       description: "Master cloud platforms and automated deployment pipelines",
       tools: "AWS, Docker, Kubernetes, Jenkins",
-      projects: "Microservices Architecture, CI/CD Pipeline",
       icon: Layers
     }
   ];
@@ -149,13 +145,13 @@ const CohortProgram = () => {
       </section>
 
       {/* Program Timeline */}
-      <section className="section-padding bg-gradient-to-b from-royal-950 to-black text-white">
+      <section className="section-padding" style={{backgroundColor: '#F9FAFB'}}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
               Program Timeline
             </h2>
-            <p className="text-xl text-cream-200 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               A structured 4-phase journey designed to build expertise progressively
             </p>
           </div>
@@ -170,11 +166,11 @@ const CohortProgram = () => {
                 <div className={`w-20 h-20 bg-gradient-to-r ${phase.color} rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow`}>
                   <phase.icon className="text-white" size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 text-gold-400">
+                <h3 className="font-serif text-2xl font-bold mb-2 text-royal-700">
                   {phase.phase}
                 </h3>
-                <p className="text-cream-300 font-semibold mb-4">{phase.semester}</p>
-                <p className="text-cream-200 leading-relaxed">{phase.description}</p>
+                <p className="text-gray-600 font-semibold mb-4">{phase.semester}</p>
+                <p className="text-gray-700 leading-relaxed">{phase.description}</p>
               </div>
             ))}
           </div>
@@ -207,13 +203,9 @@ const CohortProgram = () => {
                   <h3 className="font-serif text-2xl font-bold text-royal-900">{track.title}</h3>
                 </div>
                 <p className="text-gray-700 mb-4 leading-relaxed">{track.description}</p>
-                <div className="mb-4">
+                <div>
                   <h4 className="font-semibold text-maroon-700 mb-2">Tools & Technologies:</h4>
                   <p className="text-gray-600">{track.tools}</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-maroon-700 mb-2">Sample Projects:</h4>
-                  <p className="text-gray-600">{track.projects}</p>
                 </div>
               </div>
             ))}
@@ -222,33 +214,33 @@ const CohortProgram = () => {
       </section>
 
       {/* Internships & Certification */}
-      <section className="section-padding bg-gradient-to-b from-maroon-950 to-black text-white">
+      <section className="section-padding" style={{backgroundColor: '#EFF6FF'}}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
                 Internships & Certification
               </h2>
-              <p className="text-lg text-cream-200 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Gain real-world experience through two structured internship programs with our industry partners. 
                 Each student also receives one value-added certification course to enhance their professional profile.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="text-gold-400 mr-3" size={20} />
-                  <span className="text-cream-200">Two paid internship opportunities</span>
+                  <CheckCircle className="text-royal-600 mr-3" size={20} />
+                  <span className="text-gray-700">Two paid internship opportunities</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="text-gold-400 mr-3" size={20} />
-                  <span className="text-cream-200">Industry-recognized certification</span>
+                  <CheckCircle className="text-royal-600 mr-3" size={20} />
+                  <span className="text-gray-700">Industry-recognized certification</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="text-gold-400 mr-3" size={20} />
-                  <span className="text-cream-200">Dedicated mentor support</span>
+                  <CheckCircle className="text-royal-600 mr-3" size={20} />
+                  <span className="text-gray-700">Dedicated mentor support</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="text-gold-400 mr-3" size={20} />
-                  <span className="text-cream-200">Direct placement opportunities</span>
+                  <CheckCircle className="text-royal-600 mr-3" size={20} />
+                  <span className="text-gray-700">Direct placement opportunities</span>
                 </div>
               </div>
             </div>
@@ -296,13 +288,13 @@ const CohortProgram = () => {
       </section>
 
       {/* Outcomes */}
-      <section className="section-padding bg-gradient-to-b from-royal-950 to-black text-white">
+      <section className="section-padding" style={{backgroundColor: '#F9FAFB'}}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
               Program Outcomes
             </h2>
-            <p className="text-xl text-cream-200 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               What you'll achieve by the end of the program
             </p>
           </div>
@@ -311,16 +303,16 @@ const CohortProgram = () => {
             {outcomes.map((outcome, index) => (
               <div 
                 key={index}
-                className="scroll-reveal text-center bg-gradient-to-br from-royal-900/30 to-black/30 p-8 rounded-2xl glass-effect luxury-shadow hover:transform hover:scale-105 transition-all duration-300"
+                className="scroll-reveal text-center bg-white/80 p-8 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-royal-500 to-royal-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <outcome.icon className="text-white" size={24} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-4 text-gold-400">
+                <h3 className="font-serif text-2xl font-bold mb-4 text-royal-700">
                   {outcome.title}
                 </h3>
-                <p className="text-cream-200">{outcome.description}</p>
+                <p className="text-gray-700">{outcome.description}</p>
               </div>
             ))}
           </div>
@@ -349,10 +341,10 @@ const CohortProgram = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-gradient-to-b from-maroon-950 to-black text-white">
+      <section className="section-padding" style={{backgroundColor: '#EFF6FF'}}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
               Frequently Asked Questions
             </h2>
           </div>
@@ -361,13 +353,13 @@ const CohortProgram = () => {
             {faqs.map((faq, index) => (
               <div 
                 key={index}
-                className="scroll-reveal bg-gradient-to-br from-royal-900/30 to-black/30 p-8 rounded-2xl glass-effect luxury-shadow"
+                className="scroll-reveal bg-white/80 p-8 rounded-2xl luxury-shadow"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <h3 className="font-serif text-xl font-bold mb-4 text-gold-400">
+                <h3 className="font-serif text-xl font-bold mb-4 text-royal-700">
                   {faq.question}
                 </h3>
-                <p className="text-cream-200 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

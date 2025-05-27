@@ -7,8 +7,15 @@ const Footer = () => {
     <footer className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center">
-          <div className="font-serif text-3xl font-bold text-gradient mb-6">
-            Azhizen Academy
+          <div className="flex items-center justify-center mb-6">
+            <img 
+              src="/placeholder.svg" 
+              alt="Azhizen Academy Logo" 
+              className="h-12 w-12 mr-4"
+            />
+            <div className="font-serif text-3xl font-bold text-gradient">
+              Azhizen Academy
+            </div>
           </div>
           
           <p className="text-cream-300 text-lg mb-8 max-w-2xl mx-auto">
