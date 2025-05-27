@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const ProgramsSection = () => {
   return (
-    <section id="programs" className="section-padding bg-gradient-to-b from-blue-50 to-indigo-100">
+    <section id="programs" className="section-padding bg-gradient-to-b from-blue-100 to-indigo-200">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">

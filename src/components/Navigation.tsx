@@ -64,8 +64,11 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/78210c81-224f-49fc-a9ed-d86bf544c479.png" 
               alt="Azhizen Academy Logo" 
-              className="h-10 w-auto mr-3"
+              className="h-12 w-auto mr-4"
             />
+            <div className="font-serif text-3xl font-bold text-white">
+              Azhizen Academy
+            </div>
           </div>
           
           {/* Desktop Navigation */}

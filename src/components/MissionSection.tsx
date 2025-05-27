@@ -3,7 +3,7 @@ import React from 'react';
 
 const MissionSection = () => {
   return (
-    <section id="mission" className="section-padding bg-gradient-to-b from-slate-100 to-slate-200 text-gray-800">
+    <section id="mission" className="section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="scroll-reveal order-2 lg:order-1">
