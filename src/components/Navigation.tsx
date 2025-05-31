@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
+import aclogo from '../assets/ac_logo.png'; 
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,12 +58,12 @@ const Navigation = () => {
         ? 'bg-black/90 backdrop-blur-md border-b border-gold-300/20' 
         : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-9xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/a69fd812-0076-4906-8706-13c5a9570383.png" 
+              src={aclogo}
               alt="Azhizen Academy Logo" 
               className="h-16 w-auto"
             />

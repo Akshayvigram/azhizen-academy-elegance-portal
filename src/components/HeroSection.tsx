@@ -1,6 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import acvideo from '../assets/ac_video.mp4'; 
 
 const HeroSection = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -36,7 +36,7 @@ const HeroSection = () => {
           loop
           playsInline
         >
-          <source src="https://videos.pexels.com/video-files/5900947/5900947-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          <source src={acvideo} type="video/mp4" />
         </video>
       </div>
       
