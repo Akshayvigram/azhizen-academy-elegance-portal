@@ -9,13 +9,10 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center mb-6">
             <img 
-              src="/lovable-uploads/78210c81-224f-49fc-a9ed-d86bf544c479.png" 
+              src="/lovable-uploads/25c647a5-da36-4f96-bcbc-910332cbb5a2.png" 
               alt="Azhizen Academy Logo" 
-              className="h-16 w-auto mr-4"
+              className="h-16 w-auto"
             />
-            <div className="font-serif text-4xl font-bold text-white">
-              Azhizen Academy
-            </div>
           </div>
           
           <p className="text-cream-300 text-lg mb-8 max-w-2xl mx-auto">
