@@ -36,8 +36,7 @@ const HeroSection = () => {
           loop
           playsInline
         >
-          <source src="https://videos.pexels.com/video-files/5198239/5198239-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/8088986/8088986-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/5900947/5900947-uhd_2560_1440_25fps.mp4" type="video/mp4" />
         </video>
       </div>
       
