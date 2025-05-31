@@ -62,9 +62,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/25c647a5-da36-4f96-bcbc-910332cbb5a2.png" 
+              src="/lovable-uploads/a69fd812-0076-4906-8706-13c5a9570383.png" 
               alt="Azhizen Academy Logo" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           

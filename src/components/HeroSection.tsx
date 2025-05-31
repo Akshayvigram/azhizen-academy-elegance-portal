@@ -27,20 +27,22 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Parallax Background */}
-      <div 
-        className="absolute inset-0 bg-gradient-to-br from-black via-royal-950 to-maroon-950"
-        style={{
-          transform: `translateY(${scrollY * 0.5}px)`
-        }}
-      />
-      
-      {/* Overlay Pattern */}
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-4.0.3&auto=format&fit=crop&w=4392&q=80')] bg-cover bg-center opacity-20" 
-           style={{ transform: `translateY(${scrollY * 0.3}px)` }} />
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="https://videos.pexels.com/video-files/5198239/5198239-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/8088986/8088986-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+        </video>
+      </div>
       
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/60" />
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
