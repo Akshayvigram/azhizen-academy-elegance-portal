@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/a69fd812-0076-4906-8706-13c5a9570383.png" 
               alt="Azhizen Academy Logo" 
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </div>
           

@@ -59,35 +59,38 @@ const Navigation = () => {
         : 'bg-transparent'
     }`}>
       <div className="max-w-9xl mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src={aclogo}
               alt="Azhizen Academy Logo" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={navigateToHome}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
+              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Home
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={handleCohortClick}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
+              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Cohort Program
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={handleContactClick}
-              className="text-cream-100 hover:text-gold-400 transition-colors font-medium"
+              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Contact Us
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
             </button>
           </div>
 

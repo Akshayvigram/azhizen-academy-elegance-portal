@@ -49,15 +49,15 @@ const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="text-gold-400" size={20} />
-                <span className="text-cream-200">+91 98765 43210</span>
+                <span className="text-cream-200">9750603988</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-gold-400" size={20} />
-                <span className="text-cream-200">admissions@azhizen.academy</span>
+                <span className="text-cream-200">azhizensolutions@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="text-gold-400" size={20} />
-                <span className="text-cream-200">Azhizen Academy Campus, Education City</span>
+              <div className="flex items-start space-x-3">
+                <MapPin className="text-gold-400 mt-1" size={20} />
+                <span className="text-cream-200">R-NO:309, Mercury Block<br />KSRCE, Tiruchengode, Namakkal, Tamil Nadu</span>
               </div>
             </div>
           </div>
