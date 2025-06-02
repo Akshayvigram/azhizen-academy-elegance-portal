@@ -145,7 +145,7 @@ const CohortProgram = () => {
       </section>
 
       {/* Program Timeline */}
-      <section className="section-padding" style={{backgroundColor: '#F9FAFB'}}>
+      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
@@ -214,7 +214,7 @@ const CohortProgram = () => {
       </section>
 
       {/* Internships & Certification */}
-      <section className="section-padding" style={{backgroundColor: '#EFF6FF'}}>
+      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800"style={{backgroundColor: '#EFF6FF'}}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
@@ -270,7 +270,7 @@ const CohortProgram = () => {
             
             <div className="scroll-reveal order-1 lg:order-2">
               <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
-                Capstone Mini Project
+                Capstone Project
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The culmination of your learning journey is a comprehensive capstone project where you'll apply 
@@ -288,7 +288,7 @@ const CohortProgram = () => {
       </section>
 
       {/* Outcomes */}
-      <section className="section-padding" style={{backgroundColor: '#F9FAFB'}}>
+      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#F9FAFB'}}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
@@ -341,7 +341,7 @@ const CohortProgram = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding" style={{backgroundColor: '#EFF6FF'}}>
+      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#EFF6FF'}}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
