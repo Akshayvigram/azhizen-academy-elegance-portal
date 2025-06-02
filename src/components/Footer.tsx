@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-6">
             <img 
-              src="/lovable-uploads/78210c81-224f-49fc-a9ed-d86bf544c479.png"
+              src="/lovable-uploads/8e6644ea-edd4-4b84-a20b-5d820bdde3c8.png"
               alt="Azhizen Academy Logo" 
               className="h-32 w-auto"
             />
