@@ -10,9 +10,9 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-6">
             <img 
-              src="/lovable-uploads/a69fd812-0076-4906-8706-13c5a9570383.png"
+              src="/lovable-uploads/78210c81-224f-49fc-a9ed-d86bf544c479.png"
               alt="Azhizen Academy Logo" 
-              className="h-28 w-auto"
+              className="h-32 w-auto"
             />
             <p className="text-cream-300 leading-relaxed">
               Elevating minds, shaping futures through excellence in education and transformative learning experiences.
