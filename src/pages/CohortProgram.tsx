@@ -15,28 +15,28 @@ const CohortProgram = () => {
 
   const timelinePhases = [
     {
-      phase: "Foundation",
+      phase: "Foundation & Specialization",
       semester: "3rd Sem",
-      description: "Programming, Web Basics, Git, Soft Skills",
+      description: "Programming, Web Basics, Git, Soft Skills & Choose your track",
       icon: Code,
       color: "from-royal-500 to-royal-600"
     },
     {
-      phase: "Specialization",
+      phase: "Internship I",
       semester: "4th Sem", 
-      description: "Choose from Full Stack, AI, Cybersecurity, etc.",
-      icon: Layers,
+      description: "First guided real-world experience",
+      icon: Users,
       color: "from-maroon-500 to-maroon-600"
     },
     {
-      phase: "Internship I",
+      phase: "Internship II",
       semester: "5th Sem",
-      description: "Guided real-world experience",
-      icon: Users,
+      description: "Advanced real-world project experience",
+      icon: Layers,
       color: "from-gold-500 to-gold-600"
     },
     {
-      phase: "Internship II + Capstone",
+      phase: "Capstone Project",
       semester: "6th Sem",
       description: "Final project & evaluation",
       icon: Award,
@@ -72,10 +72,10 @@ const CohortProgram = () => {
   ];
 
   const outcomes = [
-    { icon: Users, title: "2 Internships", description: "Real industry experience" },
-    { icon: Award, title: "1 Certification", description: "Industry-recognized credential" },
-    { icon: Code, title: "1 Capstone Project", description: "Portfolio showcase piece" },
-    { icon: CheckCircle, title: "Strong Portfolio", description: "Resume-ready projects" }
+    { icon: Users, title: "2 Internships", description: "Real industry experience", color: "from-blue-500 to-blue-600" },
+    { icon: Award, title: "1 Certification", description: "Industry-recognized credential", color: "from-green-500 to-green-600" },
+    { icon: Code, title: "1 Capstone Project", description: "Portfolio showcase piece", color: "from-purple-500 to-purple-600" },
+    { icon: CheckCircle, title: "Strong Portfolio", description: "Resume-ready projects", color: "from-orange-500 to-orange-600" }
   ];
 
   const faqs = [
@@ -306,7 +306,7 @@ const CohortProgram = () => {
                 className="scroll-reveal text-center bg-white/80 p-8 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-royal-500 to-royal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className={`w-16 h-16 bg-gradient-to-r ${outcome.color} rounded-full flex items-center justify-center mx-auto mb-6`}>
                   <outcome.icon className="text-white" size={24} />
                 </div>
                 <h3 className="font-serif text-2xl font-bold mb-4 text-royal-700">
@@ -335,7 +335,8 @@ const CohortProgram = () => {
             onClick={handleApplyNow}
             className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
           >
-            Apply Now - Start Your Journey
+            <span className="hidden sm:inline">Apply Now - Start Your Journey</span>
+            <span className="sm:hidden">Apply Now</span>
           </Button>
         </div>
       </section>

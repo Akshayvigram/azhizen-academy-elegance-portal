@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
-import aclogo from '../assets/ac_logo.png'; 
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,13 +58,13 @@ const Navigation = () => {
         : 'bg-transparent'
     }`}>
       <div className="max-w-9xl mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={aclogo}
+              src="/lovable-uploads/a69fd812-0076-4906-8706-13c5a9570383.png"
               alt="Azhizen Academy Logo" 
-              className="h-20 w-auto"
+              className="h-32 w-auto"
             />
           </div>
           
@@ -76,21 +75,21 @@ const Navigation = () => {
               className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Home
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={handleCohortClick}
               className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Cohort Program
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={handleContactClick}
               className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Contact Us
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full"></span>
             </button>
           </div>
 
