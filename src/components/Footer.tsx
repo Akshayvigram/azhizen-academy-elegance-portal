@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../assets/ac_logo.png';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-6">
             <img 
-              src="/lovable-uploads/8e6644ea-edd4-4b84-a20b-5d820bdde3c8.png"
+              src={logo}
               alt="Azhizen Academy Logo" 
               className="h-32 w-auto"
             />
