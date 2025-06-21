@@ -57,8 +57,32 @@ const Footer = () => {
           <p className="text-cream-400">
             © 2024 Azhizen Academy. All rights reserved.
           </p>
+           <div className="mt-3 space-x-4">
+      <a
+  href="https://azhizen.com" // or your actual portfolio URL
+  className="text-azhizen-lightPurple hover:underline"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Azhizen Portfolio
+</a>
+
+
+      <span className="text-azhizen-neutralGray">|</span>
+      <a
+        href="https://media.azhizen.com"
+        className="text-azhizen-lightPurple hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Azhizen Media
+      </a>
+    </div>
+    <p className="text-sm text-azhizen-neutralGray mt-3">
+      Summer Internship Program 2025
+    </p>
+  </div>
         </div>
-      </div>
     </footer>
   );
 };
