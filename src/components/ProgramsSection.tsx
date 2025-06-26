@@ -7,9 +7,9 @@ const ProgramsSection = () => {
     <section id="programs" className="section-padding bg-gradient-to-b from-blue-100 to-indigo-200">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
-            Our Program
-          </h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient leading-[1.2]">
+  Our Program
+</h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Discover our comprehensive cohort-based learning journey designed to transform students into industry-ready professionals.
           </p>

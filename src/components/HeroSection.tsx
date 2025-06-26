@@ -47,6 +47,7 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
           <span className="text-gradient animate-fade-in-up">Azhizen</span>
+
           <br />
           <span className="text-cream-100 animate-fade-in-up" style={{animationDelay: '0.2s'}}>Academy</span>
         </h1>

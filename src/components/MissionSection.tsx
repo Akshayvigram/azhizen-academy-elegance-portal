@@ -18,7 +18,7 @@ const MissionSection = () => {
           </div>
           
           <div className="scroll-reveal order-1 lg:order-2">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-[#03045E]">
               Our Mission
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">

@@ -34,13 +34,16 @@ const Footer = () => {
           <div>
             <h3 className="font-serif text-xl font-bold mb-6 text-gold-400">Get in Touch</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Phone className="text-gold-400" size={20} />
-                <span className="text-cream-300">9750603988</span>
+              <div className="flex items-start space-x-3">
+              <Phone className="text-gold-400 mt-1" size={20} />
+              <div className="flex flex-col text-cream-300">
+                <span>+91 7010682506</span>
+                <span>+91 9750603988</span>
               </div>
+            </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-gold-400" size={20} />
-                <span className="text-cream-300">azhizensolutions@gmail.com</span>
+                <span className="text-cream-300">academy@azhizen.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="text-gold-400 mt-1" size={20} />

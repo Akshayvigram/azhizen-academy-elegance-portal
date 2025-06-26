@@ -47,13 +47,16 @@ const ContactSection = () => {
           <div className="scroll-reveal">
             <h3 className="text-2xl font-bold mb-6 text-gold-400">Get in Touch</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Phone className="text-gold-400" size={20} />
-                <span className="text-cream-200">9750603988</span>
+              <div className="flex items-start space-x-3">
+                <Phone className="text-gold-400 mt-1" size={20} />
+                <div className="flex flex-col text-cream-200">
+                  <span>+91 7010682506</span>
+                  <span>+91 9750603988</span>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-gold-400" size={20} />
-                <span className="text-cream-200">azhizensolutions@gmail.com</span>
+                <span className="text-cream-200">academy@azhizen.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="text-gold-400 mt-1" size={20} />
