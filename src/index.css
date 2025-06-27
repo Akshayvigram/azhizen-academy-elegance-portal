@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
@@ -115,7 +116,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #9d5fff, #ffd447);
+    background: linear-gradient(135deg, #03045E, #00B4D8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
