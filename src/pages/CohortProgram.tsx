@@ -108,25 +108,30 @@ const CohortProgram = () => {
         <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-            <span className="text-gradient">From Zero to Skilled</span>
-            <br />
-            <span className="text-cream-100">Your Career Starts Here</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-            Join our exclusive cohort program for 3rd to 6th semester students to gain real-world skills, 
-            internships, and project experience that transforms you into an industry-ready professional.
-          </p>
-          
-          <Button 
-            onClick={handleApplyNow}
-            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-7 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow animate-fade-in-up"
-            style={{animationDelay: '0.6s'}}
-          >
-            Apply Now
-          </Button>
-        </div>
+  <h1 className="font-bold text-4xl lg:text-6xl leading-tight mb-4">
+    <span className="bg-gradient-to-r from-[#B6203D] to-[#FFD447] bg-clip-text text-transparent">
+      From Zero to Skilled
+    </span>
+    <br />
+    <span className="text-cream-100">
+      Your Career Starts Here
+    </span>
+  </h1>
+
+  <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+    Join our exclusive cohort program for 3rd to 6th semester students to gain real-world skills, 
+    internships, and project experience that transforms you into an industry-ready professional.
+  </p>
+
+  <Button 
+    onClick={handleApplyNow}
+    className="bg-gradient-to-r from-[#9D5FFF] to-[#E04B4B] hover:from-[#8B3DFF] hover:to-[#CD2F2F] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg animate-fade-in-up"
+    style={{ animationDelay: '0.6s' }}
+  >
+    Apply Now
+  </Button>
+</div>
+
       </section>
 
       {/* About the Cohort Program */}

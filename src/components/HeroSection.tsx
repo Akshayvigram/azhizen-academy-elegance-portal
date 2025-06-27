@@ -45,16 +45,32 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
-          <span className="text-gradient animate-fade-in-up">Azhizen</span>
+        <h1 className="font-bold text-4xl lg:text-8xl leading-tight">
+          <span
+                className="bg-gradient-to-r from-[#B6203D] to-[#FFD447] bg-clip-text text-transparent"
+                
+              >
+              Azhizen
+          </span>
+
 
           <br />
-          <span className="text-cream-100 animate-fade-in-up" style={{animationDelay: '0.2s'}}>Academy</span>
+          <span
+            className="text-[#F4EDE4] animate-fade-in-up block mt-2"
+            style={{ animationDelay: '0.2s' }}
+          >
+            Academy
+          </span>
         </h1>
-        
-        <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-          Elevating minds, shaping futures through excellence in education and transformative learning experiences
+        <br/>
+        <p
+          className="text-xl md:text-2xl text-[#E2DCD5] mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
+          style={{ animationDelay: '0.4s' }}
+        >
+          Elevating minds, shaping futures through excellence in education and transformative learning experiences.
         </p>
+      
+          
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <button 
