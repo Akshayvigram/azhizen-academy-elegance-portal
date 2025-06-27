@@ -34,7 +34,7 @@ const ContactSection = () => {
     <section id="contact" className="section-padding bg-gradient-to-b from-black to-royal-950 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-gradient">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-[#5F22B6] leading-[1.2] overflow-visible">
             Contact Us
           </h2>
           <p className="text-xl text-cream-200 max-w-3xl mx-auto leading-relaxed">

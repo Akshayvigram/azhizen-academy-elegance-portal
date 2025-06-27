@@ -7,9 +7,10 @@ const VisionSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="scroll-reveal">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-03045E leading-[1.2] overflow-visible">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-[#5F22B6] leading-[1.2] overflow-visible">
               Our Vision
             </h2>
+
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               To be the premier educational institution that cultivates innovative leaders, 
               critical thinkers, and compassionate global citizens who shape the future 

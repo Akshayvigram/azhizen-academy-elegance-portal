@@ -121,7 +121,7 @@ const CohortProgram = () => {
           
           <Button 
             onClick={handleApplyNow}
-            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow animate-fade-in-up"
+            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-7 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow animate-fade-in-up"
             style={{animationDelay: '0.6s'}}
           >
             Apply Now
@@ -333,7 +333,7 @@ const CohortProgram = () => {
           </p>
           <Button 
             onClick={handleApplyNow}
-            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
+            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-12 py-7 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
           >
             <span className="hidden sm:inline">Apply Now - Start Your Journey</span>
             <span className="sm:hidden">Apply Now</span>

@@ -33,8 +33,8 @@ const ValuesSection = () => {
     <section id="values" className="section-padding bg-gradient-to-b from-cream-100 to-cream-200">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
-            Core Values
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-[#5F22B6] leading-[1.2] overflow-visible">
+          Core Values
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Our fundamental principles guide every decision and shape the culture of excellence 
