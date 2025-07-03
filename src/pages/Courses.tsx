@@ -164,7 +164,7 @@ const Courses = () => {
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
-                <option value="">Select Category</option>
+                <option value="" disabled>All Categories</option>
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
                 ))}
@@ -175,7 +175,7 @@ const Courses = () => {
                 onChange={(e) => setSelectedLevel(e.target.value)}
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
-                <option value="">Select Level</option>
+                <option value="" disabled>All Levels</option>
                 {levels.map(level => (
                   <option key={level} value={level}>{level}</option>
                 ))}
@@ -186,7 +186,7 @@ const Courses = () => {
                 onChange={(e) => setSelectedPricing(e.target.value)}
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
-                <option value="">Select Pricing</option>
+                <option value="" disabled>All Pricing</option>
                 {pricingOptions.map(option => (
                   <option key={option} value={option}>{option}</option>
                 ))}

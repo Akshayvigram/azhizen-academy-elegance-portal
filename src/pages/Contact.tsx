@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
-import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,9 +28,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-dark-blue-950 via-black to-dark-blue-950">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       {/* Navigation */}
-      <nav className="bg-black/90 backdrop-blur-md border-b border-light-blue-400/20">
+      <nav className="bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20">
             <button 
@@ -49,12 +49,12 @@ const Contact = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 text-center">
+      <section className="pt-20 pb-16 text-center bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-dark-blue-600 to-light-blue-600 bg-clip-text text-transparent">
             Contact Us
           </h1>
-          <p className="text-xl text-gray-200 leading-relaxed">
+          <p className="text-xl text-gray-700 leading-relaxed">
             Ready to begin your journey with Azhizen Academy? We'd love to hear from you.
           </p>
         </div>
@@ -65,9 +65,9 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <Card className="bg-white/10 backdrop-blur-md border-light-blue-400/20 luxury-shadow">
+            <Card className="bg-white/90 backdrop-blur-md border border-gray-200 luxury-shadow">
               <CardContent className="p-8">
-                <h2 className="font-serif text-3xl font-bold mb-6 text-light-blue-400">
+                <h2 className="font-serif text-3xl font-bold mb-6 text-dark-blue-600">
                   Send us a Message
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -77,7 +77,7 @@ const Contact = () => {
                       placeholder="Your Name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="bg-white/5 border-gray-300/30 text-white placeholder:text-gray-400"
+                      className="bg-gray-50 border-gray-300 text-gray-900 placeholder:text-gray-500"
                       required
                     />
                   </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                       placeholder="Your Email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="bg-white/5 border-gray-300/30 text-white placeholder:text-gray-400"
+                      className="bg-gray-50 border-gray-300 text-gray-900 placeholder:text-gray-500"
                       required
                     />
                   </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                       placeholder="Subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="bg-white/5 border-gray-300/30 text-white placeholder:text-gray-400"
+                      className="bg-gray-50 border-gray-300 text-gray-900 placeholder:text-gray-500"
                       required
                     />
                   </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                       placeholder="Your Message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="bg-white/5 border-gray-300/30 text-white placeholder:text-gray-400 min-h-32"
+                      className="bg-gray-50 border-gray-300 text-gray-900 placeholder:text-gray-500 min-h-32"
                       required
                     />
                   </div>
@@ -125,41 +125,44 @@ const Contact = () => {
 
             {/* Contact Info & Map */}
             <div className="space-y-8">
-              <Card className="bg-white/10 backdrop-blur-md border-light-blue-400/20 luxury-shadow">
+              <Card className="bg-white/90 backdrop-blur-md border border-gray-200 luxury-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-serif text-2xl font-bold mb-6 text-light-blue-400">
+                  <h3 className="font-serif text-2xl font-bold mb-6 text-dark-blue-600">
                     Get in Touch
                   </h3>
-                  <div className="space-y-4 text-gray-200">
-                    <div>
-                      <h4 className="font-semibold text-white mb-1">Email</h4>
-                      <p>info@azhizenacademy.com</p>
+                  <div className="space-y-4 text-gray-700">
+                    <div className="flex items-center space-x-3">
+                      <Mail className="text-light-blue-600" size={20} />
+                      <span>academy@azhizen.com</span>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1">Phone</h4>
-                      <p>+1 (555) 123-4567</p>
+                    <div className="flex items-start space-x-3">
+                      <Phone className="text-light-blue-600 mt-1" size={20} />
+                      <div className="flex flex-col">
+                        <span>+91 7010682506</span>
+                        <span>+91 9750603988</span>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1">Address</h4>
-                      <p>123 Academy Street<br />Education District<br />City, State 12345</p>
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="text-light-blue-600 mt-1" size={20} />
+                      <span>R-NO:309, Mercury Block<br />KSRCE, Tiruchengode, Namakkal, Tamil Nadu</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Map Placeholder */}
-              <Card className="bg-white/10 backdrop-blur-md border-light-blue-400/20 luxury-shadow">
+              <Card className="bg-white/90 backdrop-blur-md border border-gray-200 luxury-shadow">
                 <CardContent className="p-0">
-                  <div className="h-64 bg-gradient-to-br from-dark-blue-900/50 to-dark-blue-900/50 rounded-lg flex items-center justify-center">
-                    <p className="text-gray-300 text-lg">Interactive Map Coming Soon</p>
+                  <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
+                    <p className="text-gray-500 text-lg">Interactive Map Coming Soon</p>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Social Media */}
-              <Card className="bg-white/10 backdrop-blur-md border-light-blue-400/20 luxury-shadow">
+              <Card className="bg-white/90 backdrop-blur-md border border-gray-200 luxury-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-serif text-2xl font-bold mb-6 text-light-blue-400">
+                  <h3 className="font-serif text-2xl font-bold mb-6 text-dark-blue-600">
                     Follow Us
                   </h3>
                   <div className="flex space-x-4">

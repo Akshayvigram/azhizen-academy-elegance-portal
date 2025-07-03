@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Star, Users, Clock, ArrowRight } from 'lucide-react';
+import { Star, Users, Clock, ArrowRight, GraduationCap, TrendingUp, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -41,6 +41,33 @@ const FeaturedCoursesSection = () => {
       duration: "10 weeks",
       level: "Beginner",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    }
+  ];
+
+  const statistics = [
+    {
+      icon: GraduationCap,
+      number: "50+",
+      label: "Expert Courses",
+      color: "text-yellow-500"
+    },
+    {
+      icon: Users,
+      number: "10K+",
+      label: "Students",
+      color: "text-green-500"
+    },
+    {
+      icon: Award,
+      number: "95%",
+      label: "Success Rate",
+      color: "text-pink-500"
+    },
+    {
+      icon: TrendingUp,
+      number: "85%",
+      label: "Job Placement",
+      color: "text-orange-500"
     }
   ];
 
@@ -116,6 +143,29 @@ const FeaturedCoursesSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Statistics Section */}
+        <div className="mb-12">
+          <div className="bg-dark-blue-900 rounded-2xl p-8 md:p-12 luxury-shadow">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {statistics.map((stat, index) => (
+                <div key={index} className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+                      <stat.icon className={`w-8 h-8 ${stat.color}`} />
+                    </div>
+                  </div>
+                  <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+                    {stat.number}
+                  </div>
+                  <div className="text-gray-300 font-medium">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         
         <div className="text-center">
