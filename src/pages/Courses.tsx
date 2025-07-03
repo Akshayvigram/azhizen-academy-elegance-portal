@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Star, Users, Clock, Filter, Search, ArrowRight } from 'lucide-react';
+import { Star, Users, Clock, Search, ArrowRight } from 'lucide-react';
 
 const Courses = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -109,34 +108,50 @@ const Courses = () => {
   });
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-b from-royal-900 to-royal-800 text-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Explore Our Courses
-          </h1>
-          <p className="text-xl md:text-2xl text-cream-200 max-w-4xl mx-auto leading-relaxed">
-            Discover comprehensive courses designed by industry experts to advance your career.
-          </p>
+      {/* Modern Hero Section */}
+      <section className="section-padding bg-gradient-to-br from-dark-blue-900 via-dark-blue-800 to-light-blue-600 text-white overflow-hidden">
+        <div className="max-w-6xl mx-auto relative">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-20 left-20 w-32 h-32 bg-light-blue-400 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 right-20 w-40 h-40 bg-light-blue-500 rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="relative z-10 text-center">
+            <div className="inline-block mb-6">
+              <span className="bg-light-blue-500/20 text-light-blue-200 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm border border-light-blue-400/30">
+                Our Courses
+              </span>
+            </div>
+            <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Explore Our{' '}
+              <span className="bg-gradient-to-r from-light-blue-300 to-light-blue-500 bg-clip-text text-transparent">
+                Courses
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Discover comprehensive courses designed by industry experts to advance your career.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Filters and Search */}
-      <section className="py-8 bg-cream-50 border-b">
+      {/* Modern Filters and Search */}
+      <section className="py-12 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
+          <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
             {/* Search */}
             <div className="relative flex-1 max-w-md">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
               <input
                 type="text"
                 placeholder="Search courses..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-royal-500"
+                className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
               />
             </div>
 
@@ -145,7 +160,7 @@ const Courses = () => {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-royal-500"
+                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300"
               >
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
@@ -155,7 +170,7 @@ const Courses = () => {
               <select
                 value={selectedLevel}
                 onChange={(e) => setSelectedLevel(e.target.value)}
-                className="px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-royal-500"
+                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300"
               >
                 {levels.map(level => (
                   <option key={level} value={level}>{level}</option>
@@ -165,7 +180,7 @@ const Courses = () => {
               <select
                 value={selectedPricing}
                 onChange={(e) => setSelectedPricing(e.target.value)}
-                className="px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-royal-500"
+                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300"
               >
                 {pricingOptions.map(option => (
                   <option key={option} value={option}>{option}</option>
@@ -176,12 +191,12 @@ const Courses = () => {
         </div>
       </section>
 
-      {/* Courses Grid */}
-      <section className="section-padding bg-gradient-to-b from-cream-50 to-cream-100">
+      {/* Modern Courses Grid */}
+      <section className="section-padding bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
-            <p className="text-gray-600 text-lg">
-              Showing {filteredCourses.length} of {courses.length} courses
+            <p className="text-gray-600 text-lg font-medium">
+              Showing <span className="text-dark-blue-600 font-semibold">{filteredCourses.length}</span> of <span className="text-dark-blue-600 font-semibold">{courses.length}</span> courses
             </p>
           </div>
 
@@ -189,26 +204,37 @@ const Courses = () => {
             {filteredCourses.map((course) => (
               <Card 
                 key={course.id}
-                className="hover:transform hover:scale-105 transition-all duration-300 luxury-shadow border-0 bg-white/90 backdrop-blur-sm"
+                className="group hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border-0 bg-white overflow-hidden"
               >
-                <div className="relative overflow-hidden rounded-t-lg">
+                <div className="relative overflow-hidden">
                   <img 
                     src={course.image}
                     alt={course.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-sm font-semibold text-royal-600">
-                    {course.level}
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  <div className="absolute top-4 right-4">
+                    <span className={`px-3 py-1 rounded-full text-xs font-semibold text-white backdrop-blur-sm ${
+                      course.level === 'Beginner' ? 'bg-green-500/80' :
+                      course.level === 'Intermediate' ? 'bg-light-blue-500/80' :
+                      'bg-dark-blue-600/80'
+                    }`}>
+                      {course.level}
+                    </span>
                   </div>
+                  
                   {course.price === 0 && (
-                    <div className="absolute top-4 left-4 bg-green-500 text-white px-2 py-1 rounded-full text-sm font-semibold">
-                      FREE
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
+                        FREE
+                      </span>
                     </div>
                   )}
                 </div>
                 
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-xl font-bold text-royal-900 mb-2">
+                  <CardTitle className="text-xl font-bold text-dark-blue-900 mb-2 group-hover:text-light-blue-600 transition-colors duration-300">
                     {course.title}
                   </CardTitle>
                   <p className="text-gray-600 text-sm">by {course.instructor}</p>
@@ -217,7 +243,7 @@ const Courses = () => {
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between text-sm text-gray-600">
                     <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-gold-400 text-gold-400" />
+                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       <span className="font-semibold">{course.rating}</span>
                     </div>
                     <div className="flex items-center gap-1">
@@ -234,16 +260,20 @@ const Courses = () => {
                     {course.description}
                   </p>
                   
-                  <div className="flex items-center justify-between pt-2">
-                    <div className="text-2xl font-bold text-royal-600">
-                      {course.price === 0 ? 'FREE' : `₹${course.price.toLocaleString()}`}
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                    <div className="text-2xl font-bold">
+                      {course.price === 0 ? (
+                        <span className="text-emerald-600">FREE</span>
+                      ) : (
+                        <span className="text-dark-blue-600">₹{course.price.toLocaleString()}</span>
+                      )}
                     </div>
                     <button 
                       onClick={() => window.location.href = `/courses/${course.id}`}
-                      className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-2"
+                      className="bg-gradient-to-r from-dark-blue-600 to-light-blue-600 hover:from-dark-blue-700 hover:to-light-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-2 group-hover:shadow-lg"
                     >
                       View Details
-                      <ArrowRight size={16} />
+                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
                     </button>
                   </div>
                 </CardContent>
@@ -252,8 +282,11 @@ const Courses = () => {
           </div>
 
           {filteredCourses.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">No courses found matching your criteria.</p>
+            <div className="text-center py-16">
+              <div className="bg-gray-100 rounded-2xl p-12">
+                <p className="text-gray-500 text-xl mb-4">No courses found matching your criteria.</p>
+                <p className="text-gray-400">Try adjusting your filters or search terms.</p>
+              </div>
             </div>
           )}
         </div>

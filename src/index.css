@@ -127,7 +127,7 @@
   }
 
   .luxury-shadow {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(3, 4, 94, 0.15), 0 10px 25px -8px rgba(0, 180, 216, 0.1);
   }
 }
 

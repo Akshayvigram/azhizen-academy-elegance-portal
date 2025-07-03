@@ -42,21 +42,17 @@ const HeroSection = () => {
       </div>
       
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-dark-blue-900/70" />
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         <h1 className="font-bold text-4xl lg:text-8xl leading-tight">
-          <span
-                className="bg-gradient-to-r from-[#B6203D] to-[#FFD447] bg-clip-text text-transparent"
-                
-              >
-              Azhizen
+          <span className="bg-gradient-to-r from-light-blue-400 to-light-blue-600 bg-clip-text text-transparent">
+            Azhizen
           </span>
-
           <br />
           <span
-            className="text-[#F4EDE4] animate-fade-in-up block mt-2"
+            className="text-white animate-fade-in-up block mt-2"
             style={{ animationDelay: '0.2s' }}
           >
             Academy
@@ -64,7 +60,7 @@ const HeroSection = () => {
         </h1>
         <br/>
         <p
-          className="text-xl md:text-2xl text-[#E2DCD5] mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
+          className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
           style={{ animationDelay: '0.4s' }}
         >
           Elevating minds, shaping futures through excellence in education and transformative learning experiences.
@@ -73,13 +69,13 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <button 
             onClick={scrollToContact}
-            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
+            className="bg-gradient-to-r from-dark-blue-900 to-light-blue-600 hover:from-dark-blue-800 hover:to-light-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             Join Our Cohort Program
           </button>
           <button 
             onClick={() => window.location.href = '/courses'}
-            className="bg-transparent border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            className="bg-transparent border-2 border-light-blue-400 text-light-blue-400 hover:bg-light-blue-400 hover:text-dark-blue-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
             Explore Courses
           </button>
@@ -88,7 +84,7 @@ const HeroSection = () => {
       
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-        <button onClick={scrollToNext} className="text-cream-300 hover:text-gold-400 transition-colors">
+        <button onClick={scrollToNext} className="text-light-blue-300 hover:text-light-blue-400 transition-colors">
           <ChevronDown size={32} />
         </button>
       </div>

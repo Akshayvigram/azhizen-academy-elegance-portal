@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -55,7 +54,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-black/90 backdrop-blur-md border-b border-gold-300/20' 
+        ? 'bg-dark-blue-900/95 backdrop-blur-md border-b border-light-blue-300/20 shadow-lg' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-9xl mx-auto px-7 lg:px-12">
@@ -73,38 +72,38 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={navigateToHome}
-              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+              className="relative text-white hover:text-light-blue-400 transition-colors font-medium text-lg py-2 group"
             >
               Home
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-light-blue-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110 rounded-full"></span>
             </button>
             <button 
               onClick={() => handleNavigation('/about')}
-              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+              className="relative text-white hover:text-light-blue-400 transition-colors font-medium text-lg py-2 group"
             >
               About
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-light-blue-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110 rounded-full"></span>
             </button>
             <button 
               onClick={() => handleNavigation('/courses')}
-              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+              className="relative text-white hover:text-light-blue-400 transition-colors font-medium text-lg py-2 group"
             >
               Courses
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-light-blue-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110 rounded-full"></span>
             </button>
             <button 
               onClick={() => handleNavigation('/cohort-program')}
-              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+              className="relative text-white hover:text-light-blue-400 transition-colors font-medium text-lg py-2 group"
             >
               Cohort Program
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-light-blue-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110 rounded-full"></span>
             </button>
             <button 
               onClick={handleContactClick}
-              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+              className="relative text-white hover:text-light-blue-400 transition-colors font-medium text-lg py-2 group"
             >
               Contact Us
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-light-blue-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110 rounded-full"></span>
             </button>
           </div>
 
@@ -112,39 +111,39 @@ const Navigation = () => {
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-cream-100">
+                <Button variant="ghost" size="icon" className="text-white hover:text-light-blue-400">
                   <Menu size={24} />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-black/95 backdrop-blur-md border-l border-gold-300/20">
+              <SheetContent side="right" className="bg-dark-blue-900/95 backdrop-blur-md border-l border-light-blue-300/20">
                 <div className="flex flex-col space-y-6 mt-8">
                   <button 
                     onClick={navigateToHome}
-                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                    className="text-white hover:text-light-blue-400 transition-colors font-medium text-left py-2"
                   >
                     Home
                   </button>
                   <button 
                     onClick={() => handleNavigation('/about')}
-                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                    className="text-white hover:text-light-blue-400 transition-colors font-medium text-left py-2"
                   >
                     About
                   </button>
                   <button 
                     onClick={() => handleNavigation('/courses')}
-                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                    className="text-white hover:text-light-blue-400 transition-colors font-medium text-left py-2"
                   >
                     Courses
                   </button>
                   <button 
                     onClick={() => handleNavigation('/cohort-program')}
-                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                    className="text-white hover:text-light-blue-400 transition-colors font-medium text-left py-2"
                   >
                     Cohort Program
                   </button>
                   <button 
                     onClick={handleContactClick}
-                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                    className="text-white hover:text-light-blue-400 transition-colors font-medium text-left py-2"
                   >
                     Contact Us
                   </button>

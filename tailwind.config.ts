@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,7 +63,36 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Luxury color palette
+				// Updated color palette
+				'dark-blue': {
+					DEFAULT: '#03045E',
+					50: '#f0f1ff',
+					100: '#e3e6ff',
+					200: '#ced3ff',
+					300: '#acb6ff',
+					400: '#8690ff',
+					500: '#6066ff',
+					600: '#4338ff',
+					700: '#342aef',
+					800: '#2822c7',
+					900: '#03045E',
+					950: '#020240'
+				},
+				'light-blue': {
+					DEFAULT: '#00B4D8',
+					50: '#f0fcff',
+					100: '#e0f8ff',
+					200: '#baf0ff',
+					300: '#7ee6ff',
+					400: '#39d9ff',
+					500: '#00B4D8',
+					600: '#0295ba',
+					700: '#0a7795',
+					800: '#10637b',
+					900: '#125266',
+					950: '#083545'
+				},
+				// Keep legacy colors for compatibility
 				royal: {
 					50: '#f8f7ff',
 					100: '#f0eeff',
@@ -75,34 +103,21 @@ export default {
 					600: '#8b3dff',
 					700: '#7c2dff',
 					800: '#6624d4',
-					900: '#5520ab',
-					950: '#2d0a5c'
-				},
-				maroon: {
-					50: '#fdf2f2',
-					100: '#fce4e4',
-					200: '#facece',
-					300: '#f5a9a9',
-					400: '#ed7676',
-					500: '#e04b4b',
-					600: '#cd2f2f',
-					700: '#ab2525',
-					800: '#8d2424',
-					900: '#762424',
-					950: '#400e0e'
+					900: '#03045E',
+					950: '#020240'
 				},
 				gold: {
 					50: '#fffef7',
 					100: '#fffbeb',
 					200: '#fff4c7',
 					300: '#ffe88f',
-					400: '#ffd447',
-					500: '#ffbc1f',
-					600: '#f59e0b',
-					700: '#d97706',
-					800: '#b45309',
-					900: '#92400e',
-					950: '#78350f'
+					400: '#00B4D8',
+					500: '#00B4D8',
+					600: '#0295ba',
+					700: '#0a7795',
+					800: '#10637b',
+					900: '#125266',
+					950: '#083545'
 				},
 				cream: {
 					50: '#fefdfb',
