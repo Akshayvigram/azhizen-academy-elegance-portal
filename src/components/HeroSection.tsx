@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import acvideo from '../assets/ac_video.mp4'; 
 
 const HeroSection = () => {
@@ -41,13 +42,13 @@ const HeroSection = () => {
         </video>
       </div>
       
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-dark-blue-900/70" />
+      {/* Dark Overlay - Reduced opacity */}
+      <div className="absolute inset-0 bg-dark-blue-900/30" />
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         <h1 className="font-bold text-4xl lg:text-8xl leading-tight">
-          <span className="bg-gradient-to-r from-light-blue-400 to-light-blue-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-dark-blue-600 to-light-blue-600 bg-clip-text text-transparent">
             Azhizen
           </span>
           <br />
@@ -67,18 +68,19 @@ const HeroSection = () => {
         </p>
       
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-          <button 
+          <Button 
             onClick={scrollToContact}
-            className="bg-gradient-to-r from-dark-blue-900 to-light-blue-600 hover:from-dark-blue-800 hover:to-light-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+            size="lg"
           >
             Join Our Cohort Program
-          </button>
-          <button 
+          </Button>
+          <Button 
             onClick={() => window.location.href = '/courses'}
-            className="bg-transparent border-2 border-light-blue-400 text-light-blue-400 hover:bg-light-blue-400 hover:text-dark-blue-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            variant="outline"
+            size="lg"
           >
             Explore Courses
-          </button>
+          </Button>
         </div>
       </div>
       

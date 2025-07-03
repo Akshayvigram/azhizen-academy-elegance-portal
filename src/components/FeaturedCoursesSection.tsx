@@ -2,6 +2,7 @@
 import React from 'react';
 import { Star, Users, Clock, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 const FeaturedCoursesSection = () => {
   const featuredCourses = [
@@ -44,10 +45,10 @@ const FeaturedCoursesSection = () => {
   ];
 
   return (
-    <section id="featured-courses" className="section-padding bg-gradient-to-b from-cream-50 to-cream-100">
+    <section id="featured-courses" className="section-padding bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-[#5F22B6] leading-[1.2]">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-dark-blue-900 leading-[1.2]">
             Featured Courses
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -68,13 +69,13 @@ const FeaturedCoursesSection = () => {
                   alt={course.title}
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-sm font-semibold text-royal-600">
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-sm font-semibold text-dark-blue-600">
                   {course.level}
                 </div>
               </div>
               
               <CardHeader className="pb-3">
-                <CardTitle className="text-xl font-bold text-royal-900 mb-2">
+                <CardTitle className="text-xl font-bold text-dark-blue-900 mb-2">
                   {course.title}
                 </CardTitle>
                 <p className="text-gray-600 text-sm">by {course.instructor}</p>
@@ -83,7 +84,7 @@ const FeaturedCoursesSection = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-between text-sm text-gray-600">
                   <div className="flex items-center gap-1">
-                    <Star className="w-4 h-4 fill-gold-400 text-gold-400" />
+                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                     <span className="font-semibold">{course.rating}</span>
                   </div>
                   <div className="flex items-center gap-1">
@@ -101,16 +102,16 @@ const FeaturedCoursesSection = () => {
                 </p>
                 
                 <div className="flex items-center justify-between pt-2">
-                  <div className="text-2xl font-bold text-royal-600">
+                  <div className="text-2xl font-bold text-dark-blue-600">
                     ₹{course.price.toLocaleString()}
                   </div>
-                  <button 
+                  <Button 
                     onClick={() => window.location.href = `/courses/${course.id}`}
-                    className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-2"
+                    size="sm"
                   >
                     View Course
                     <ArrowRight size={16} />
-                  </button>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -118,12 +119,12 @@ const FeaturedCoursesSection = () => {
         </div>
         
         <div className="text-center">
-          <button 
+          <Button 
             onClick={() => window.location.href = '/courses'}
-            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
+            size="lg"
           >
             View All Courses
-          </button>
+          </Button>
         </div>
       </div>
     </section>

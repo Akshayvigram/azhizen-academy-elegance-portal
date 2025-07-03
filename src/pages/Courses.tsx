@@ -1,7 +1,9 @@
+
 import React, { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Star, Users, Clock, Search, ArrowRight } from 'lucide-react';
 
 const Courses = () => {
@@ -160,8 +162,9 @@ const Courses = () => {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300"
+                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
+                <option value="">Select Category</option>
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
                 ))}
@@ -170,8 +173,9 @@ const Courses = () => {
               <select
                 value={selectedLevel}
                 onChange={(e) => setSelectedLevel(e.target.value)}
-                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300"
+                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
+                <option value="">Select Level</option>
                 {levels.map(level => (
                   <option key={level} value={level}>{level}</option>
                 ))}
@@ -180,8 +184,9 @@ const Courses = () => {
               <select
                 value={selectedPricing}
                 onChange={(e) => setSelectedPricing(e.target.value)}
-                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300"
+                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
+                <option value="">Select Pricing</option>
                 {pricingOptions.map(option => (
                   <option key={option} value={option}>{option}</option>
                 ))}
@@ -268,13 +273,13 @@ const Courses = () => {
                         <span className="text-dark-blue-600">₹{course.price.toLocaleString()}</span>
                       )}
                     </div>
-                    <button 
+                    <Button 
                       onClick={() => window.location.href = `/courses/${course.id}`}
-                      className="bg-gradient-to-r from-dark-blue-600 to-light-blue-600 hover:from-dark-blue-700 hover:to-light-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-2 group-hover:shadow-lg"
+                      size="sm"
                     >
                       View Details
                       <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-                    </button>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
