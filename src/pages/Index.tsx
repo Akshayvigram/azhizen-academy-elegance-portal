@@ -2,9 +2,7 @@
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import VisionSection from '@/components/VisionSection';
-import MissionSection from '@/components/MissionSection';
-import ValuesSection from '@/components/ValuesSection';
+import FeaturedCoursesSection from '@/components/FeaturedCoursesSection';
 import ProgramsSection from '@/components/ProgramsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -17,9 +15,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <VisionSection />
-      <MissionSection />
-      <ValuesSection />
+      <FeaturedCoursesSection />
       <ProgramsSection />
       <ContactSection />
       <Footer />

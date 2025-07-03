@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import acvideo from '../assets/ac_video.mp4'; 
@@ -19,7 +20,7 @@ const HeroSection = () => {
   };
 
   const scrollToNext = () => {
-    const nextSection = document.getElementById('vision');
+    const nextSection = document.getElementById('featured-courses');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -53,7 +54,6 @@ const HeroSection = () => {
               Azhizen
           </span>
 
-
           <br />
           <span
             className="text-[#F4EDE4] animate-fade-in-up block mt-2"
@@ -70,8 +70,6 @@ const HeroSection = () => {
           Elevating minds, shaping futures through excellence in education and transformative learning experiences.
         </p>
       
-          
-        
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <button 
             onClick={scrollToContact}
@@ -80,10 +78,10 @@ const HeroSection = () => {
             Join Our Cohort Program
           </button>
           <button 
-            onClick={() => window.location.href = '/cohort-program'}
+            onClick={() => window.location.href = '/courses'}
             className="bg-transparent border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
-            Explore Cohort
+            Explore Courses
           </button>
         </div>
       </div>

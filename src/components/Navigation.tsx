@@ -42,8 +42,8 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const handleCohortClick = () => {
-    window.location.href = '/cohort-program';
+  const handleNavigation = (path: string) => {
+    window.location.href = path;
     setIsMobileMenuOpen(false);
   };
 
@@ -79,7 +79,21 @@ const Navigation = () => {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
             </button>
             <button 
-              onClick={handleCohortClick}
+              onClick={() => handleNavigation('/about')}
+              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+            >
+              About
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+            </button>
+            <button 
+              onClick={() => handleNavigation('/courses')}
+              className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
+            >
+              Courses
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gold-400 transition-all duration-300 group-hover:w-full transform group-hover:scale-110"></span>
+            </button>
+            <button 
+              onClick={() => handleNavigation('/cohort-program')}
               className="relative text-cream-100 hover:text-gold-400 transition-colors font-medium text-lg py-2 group"
             >
               Cohort Program
@@ -111,7 +125,19 @@ const Navigation = () => {
                     Home
                   </button>
                   <button 
-                    onClick={handleCohortClick}
+                    onClick={() => handleNavigation('/about')}
+                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                  >
+                    About
+                  </button>
+                  <button 
+                    onClick={() => handleNavigation('/courses')}
+                    className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
+                  >
+                    Courses
+                  </button>
+                  <button 
+                    onClick={() => handleNavigation('/cohort-program')}
                     className="text-cream-100 hover:text-gold-400 transition-colors font-medium text-left py-2"
                   >
                     Cohort Program
