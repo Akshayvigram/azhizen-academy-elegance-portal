@@ -81,9 +81,6 @@ const Footer = () => {
         Azhizen Media
       </a>
     </div>
-    <p className="text-sm text-azhizen-neutralGray mt-3">
-      Summer Internship Program 2025
-    </p>
   </div>
         </div>
     </footer>
