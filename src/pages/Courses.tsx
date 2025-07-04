@@ -13,13 +13,14 @@ const Courses = () => {
   const [selectedPricing, setSelectedPricing] = useState('All');
 
   const courses = [
+    // AI / ML / Data Science
     {
       id: 1,
       title: "Generative AI with Python - Prompt Engineering",
       instructor: "Dr. Rajesh Kumar",
       rating: 4.8,
       studentCount: 1250,
-      description: "Applied Machine Learning with ChatGPT, LLM Integrations including hands-on projects: Resume Builder AI, Image Classifiers, Chatbots",
+      description: "Applied Machine Learning with ChatGPT, LLM Integrations (LangChain / RAG) - Data Analysis (Pandas, NumPy, Matplotlib)",
       price: 12999,
       duration: "12 weeks",
       level: "Intermediate",
@@ -27,12 +28,26 @@ const Courses = () => {
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
+      id: 7,
+      title: "AI for Edge Devices / TinyML",
+      instructor: "Dr. Ankit Sharma",
+      rating: 4.6,
+      studentCount: 480,
+      description: "TensorFlow Lite, Edge AI deployment, Microcontroller ML, Optimization techniques for resource-constrained devices",
+      price: 11999,
+      duration: "10 weeks",
+      level: "Advanced",
+      category: "AI / ML / Data Science",
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    // Embedded Systems & IoT
+    {
       id: 2,
       title: "Embedded C & RTOS for Beginners - IoT with ESP32",
       instructor: "Prof. Priya Sharma",
       rating: 4.9,
       studentCount: 980,
-      description: "Cloud (Firebase, Azure), CoAP, MQTT, Edge Node - Core-engineering focused, job-market ready",
+      description: "Cloud (Firebase, Azure) - LoRa, MQTT, Edge Node Communication - Core-engineering focused, job-market ready",
       price: 15999,
       duration: "16 weeks",
       level: "Beginner",
@@ -40,34 +55,63 @@ const Courses = () => {
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
+      id: 8,
+      title: "Industrial Automation with PLC & SCADA",
+      instructor: "Eng. Rohit Verma",
+      rating: 4.7,
+      studentCount: 620,
+      description: "Programmable Logic Controllers, SCADA systems, Industrial communication protocols, Factory automation",
+      price: 14999,
+      duration: "14 weeks",
+      level: "Intermediate",
+      category: "Embedded Systems & IoT",
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 9,
+      title: "IoT Security & OTA Updates",
+      instructor: "Dr. Kavya Singh",
+      rating: 4.5,
+      studentCount: 390,
+      description: "IoT device security, Over-the-Air updates, Secure communication protocols, Device authentication",
+      price: 13999,
+      duration: "12 weeks",
+      level: "Advanced",
+      category: "Embedded Systems & IoT",
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    // Full Stack & Web Development
+    {
       id: 3,
       title: "Full Stack Web Development",
       instructor: "Arjun Menon",
       rating: 4.7,
       studentCount: 750,
-      description: "Frontend Dev with React + Tailwind - NextJs with TypeScript - Backend with NodeJs + MongoDB - Web3 DApps with Solidity & Hardhat - DevOps for Web Apps (CI/CD, Docker)",
+      description: "Frontend Dev with React + Tailwind - Next.js with TypeScript - Backend with Node.js + MongoDB - Web3 DApps with Solidity & Hardhat - DevOps for Web Apps (CI/CD, Docker)",
       price: 8999,
       duration: "10 weeks",
       level: "Intermediate",
       category: "Full Stack & Web Development",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
+    // Robotics & Mechatronics
     {
       id: 4,
       title: "ROS2 with Python / C++ - Arduino + Sensors & Actuators",
       instructor: "Dr. Sneha Patel",
       rating: 4.6,
       studentCount: 650,
-      description: "Projects - Raspberry Pi Automation - Vision Navigation (OpenCV) - AI-powered Robotics (YOLO, TensorFlow Lite). Best for school/college finsups, innovation challenges",
+      description: "Projects - Raspberry Pi Automation - Vision Navigation (OpenCV) - AI-powered Robotics (YOLO, TensorFlow Lite)",
       price: 11999,
       duration: "14 weeks",
       level: "Intermediate",
       category: "Robotics & Mechatronics",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
+    // VLSI & Chip Design
     {
       id: 5,
-      title: "VHDL Verilog for Beginners - ASIC Flow using Synopsys Tools",
+      title: "VHDL/Verilog for Beginners - ASIC Flow using Synopsys Tools",
       instructor: "Vikram Singh",
       rating: 4.5,
       studentCount: 580,
@@ -78,6 +122,7 @@ const Courses = () => {
       category: "VLSI & Chip Design",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
+    // Cybersecurity
     {
       id: 6,
       title: "CEH (Certified Ethical Hacking) Prep - Bug Bounty & Web Security",

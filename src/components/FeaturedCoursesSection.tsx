@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star, Users, Clock, ArrowRight, GraduationCap, TrendingUp, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -44,6 +43,45 @@ const FeaturedCoursesSection = () => {
       level: "Intermediate",
       category: "Full Stack & Web Development",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 6,
+      title: "CEH (Certified Ethical Hacking) Prep - Bug Bounty & Web Security",
+      instructor: "Ravi Kumar",
+      rating: 4.8,
+      studentCount: 2100,
+      description: "Penetration Testing - Network Security Essentials - Linux Hardening - Digital Forensics Basics. High-demand across government & private sectors",
+      price: 0,
+      duration: "8 weeks",
+      level: "Beginner",
+      category: "Cybersecurity",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 4,
+      title: "ROS2 with Python / C++ - Arduino + Sensors & Actuators",
+      instructor: "Dr. Sneha Patel",
+      rating: 4.6,
+      studentCount: 650,
+      description: "Projects - Raspberry Pi Automation - Vision Navigation (OpenCV) - AI-powered Robotics (YOLO, TensorFlow Lite). Best for school/college finsups, innovation challenges",
+      price: 11999,
+      duration: "14 weeks",
+      level: "Intermediate",
+      category: "Robotics & Mechatronics",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      id: 5,
+      title: "VHDL Verilog for Beginners - ASIC Flow using Synopsys Tools",
+      instructor: "Vikram Singh",
+      rating: 4.5,
+      studentCount: 580,
+      description: "FPGA-based System Design - Cadence Design Flow - Python for VLSI Test Automation. Aligned with India Semiconductor Mission",
+      price: 13999,
+      duration: "15 weeks",
+      level: "Advanced",
+      category: "VLSI & Chip Design",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -133,7 +171,7 @@ const FeaturedCoursesSection = () => {
                 
                 <div className="flex items-center justify-between pt-2">
                   <div className="text-2xl font-bold text-dark-blue-600">
-                    ₹{course.price.toLocaleString()}
+                    {course.price === 0 ? 'FREE' : `₹${course.price.toLocaleString()}`}
                   </div>
                   <Button 
                     onClick={() => window.location.href = `/courses/${course.id}`}
