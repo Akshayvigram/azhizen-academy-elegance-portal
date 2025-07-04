@@ -8,39 +8,42 @@ const FeaturedCoursesSection = () => {
   const featuredCourses = [
     {
       id: 1,
-      title: "Full-Stack Web Development",
+      title: "Generative AI with Python - Prompt Engineering",
       instructor: "Dr. Rajesh Kumar",
       rating: 4.8,
       studentCount: 1250,
-      description: "Master modern web development with React, Node.js, and MongoDB. Build real-world projects and deploy them to production.",
+      description: "Applied Machine Learning with ChatGPT, LLM Integrations including hands-on projects: Resume Builder AI, Image Classifiers, Chatbots",
       price: 12999,
       duration: "12 weeks",
       level: "Intermediate",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      category: "AI / ML / Data Science",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
-      title: "AI & Machine Learning Fundamentals",
+      title: "Embedded C & RTOS for Beginners - IoT with ESP32",
       instructor: "Prof. Priya Sharma",
       rating: 4.9,
       studentCount: 980,
-      description: "Dive into artificial intelligence and machine learning with Python. Learn algorithms, data science, and neural networks.",
+      description: "Cloud (Firebase, Azure), CoAP, MQTT, Edge Node - Core-engineering focused, job-market ready",
       price: 15999,
       duration: "16 weeks",
       level: "Beginner",
+      category: "Embedded Systems & IoT",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
-      title: "Digital Marketing Mastery",
+      title: "Full Stack Web Development",
       instructor: "Arjun Menon",
       rating: 4.7,
       studentCount: 750,
-      description: "Complete digital marketing course covering SEO, social media, PPC, content marketing, and analytics.",
+      description: "Frontend Dev with React + Tailwind - NextJs with TypeScript - Backend with NodeJs + MongoDB - Web3 DApps with Solidity & Hardhat - DevOps for Web Apps (CI/CD, Docker)",
       price: 8999,
       duration: "10 weeks",
-      level: "Beginner",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      level: "Intermediate",
+      category: "Full Stack & Web Development",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -145,9 +148,9 @@ const FeaturedCoursesSection = () => {
           ))}
         </div>
 
-        {/* Statistics Section */}
-        <div className="mb-12">
-          <div className="bg-dark-blue-900 rounded-2xl p-8 md:p-12 luxury-shadow">
+        {/* Statistics Section - Made smaller and center aligned */}
+        <div className="mb-12 flex justify-center">
+          <div className="bg-dark-blue-900 rounded-2xl p-8 md:p-12 luxury-shadow max-w-4xl w-full">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {statistics.map((stat, index) => (
                 <div key={index} className="text-center">

@@ -15,85 +15,85 @@ const Courses = () => {
   const courses = [
     {
       id: 1,
-      title: "Full-Stack Web Development",
+      title: "Generative AI with Python - Prompt Engineering",
       instructor: "Dr. Rajesh Kumar",
       rating: 4.8,
       studentCount: 1250,
-      description: "Master modern web development with React, Node.js, and MongoDB. Build real-world projects and deploy them to production.",
+      description: "Applied Machine Learning with ChatGPT, LLM Integrations including hands-on projects: Resume Builder AI, Image Classifiers, Chatbots",
       price: 12999,
       duration: "12 weeks",
       level: "Intermediate",
-      category: "Web Development",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      category: "AI / ML / Data Science",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
-      title: "AI & Machine Learning Fundamentals",
+      title: "Embedded C & RTOS for Beginners - IoT with ESP32",
       instructor: "Prof. Priya Sharma",
       rating: 4.9,
       studentCount: 980,
-      description: "Dive into artificial intelligence and machine learning with Python. Learn algorithms, data science, and neural networks.",
+      description: "Cloud (Firebase, Azure), CoAP, MQTT, Edge Node - Core-engineering focused, job-market ready",
       price: 15999,
       duration: "16 weeks",
       level: "Beginner",
-      category: "AI & ML",
+      category: "Embedded Systems & IoT",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
-      title: "Digital Marketing Mastery",
+      title: "Full Stack Web Development",
       instructor: "Arjun Menon",
       rating: 4.7,
       studentCount: 750,
-      description: "Complete digital marketing course covering SEO, social media, PPC, content marketing, and analytics.",
+      description: "Frontend Dev with React + Tailwind - NextJs with TypeScript - Backend with NodeJs + MongoDB - Web3 DApps with Solidity & Hardhat - DevOps for Web Apps (CI/CD, Docker)",
       price: 8999,
       duration: "10 weeks",
-      level: "Beginner",
-      category: "Marketing",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      level: "Intermediate",
+      category: "Full Stack & Web Development",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
-      title: "Data Science with Python",
+      title: "ROS2 with Python / C++ - Arduino + Sensors & Actuators",
       instructor: "Dr. Sneha Patel",
       rating: 4.6,
       studentCount: 650,
-      description: "Learn data analysis, visualization, and statistical modeling using Python, pandas, and scikit-learn.",
+      description: "Projects - Raspberry Pi Automation - Vision Navigation (OpenCV) - AI-powered Robotics (YOLO, TensorFlow Lite). Best for school/college finsups, innovation challenges",
       price: 11999,
       duration: "14 weeks",
       level: "Intermediate",
-      category: "Data Science",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      category: "Robotics & Mechatronics",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
-      title: "Mobile App Development",
+      title: "VHDL Verilog for Beginners - ASIC Flow using Synopsys Tools",
       instructor: "Vikram Singh",
       rating: 4.5,
       studentCount: 580,
-      description: "Build cross-platform mobile apps using React Native and Flutter. Deploy to both iOS and Android stores.",
+      description: "FPGA-based System Design - Cadence Design Flow - Python for VLSI Test Automation. Aligned with India Semiconductor Mission",
       price: 13999,
       duration: "15 weeks",
       level: "Advanced",
-      category: "Mobile Development",
+      category: "VLSI & Chip Design",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
-      title: "Introduction to Programming",
+      title: "CEH (Certified Ethical Hacking) Prep - Bug Bounty & Web Security",
       instructor: "Ravi Kumar",
       rating: 4.8,
       studentCount: 2100,
-      description: "Start your programming journey with basics of coding, logic building, and problem-solving techniques.",
+      description: "Penetration Testing - Network Security Essentials - Linux Hardening - Digital Forensics Basics. High-demand across government & private sectors",
       price: 0,
       duration: "8 weeks",
       level: "Beginner",
-      category: "Programming",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      category: "Cybersecurity",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
-  const categories = ['All', 'Web Development', 'AI & ML', 'Marketing', 'Data Science', 'Mobile Development', 'Programming'];
+  const categories = ['All', 'AI / ML / Data Science', 'Embedded Systems & IoT', 'Full Stack & Web Development', 'Robotics & Mechatronics', 'VLSI & Chip Design', 'Cybersecurity'];
   const levels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
   const pricingOptions = ['All', 'Free', 'Paid'];
 
@@ -164,8 +164,8 @@ const Courses = () => {
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
-                <option value="" disabled>All Categories</option>
-                {categories.map(category => (
+                <option value="All">All Categories</option>
+                {categories.slice(1).map(category => (
                   <option key={category} value={category}>{category}</option>
                 ))}
               </select>
@@ -175,8 +175,8 @@ const Courses = () => {
                 onChange={(e) => setSelectedLevel(e.target.value)}
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
-                <option value="" disabled>All Levels</option>
-                {levels.map(level => (
+                <option value="All">All Levels</option>
+                {levels.slice(1).map(level => (
                   <option key={level} value={level}>{level}</option>
                 ))}
               </select>
@@ -186,8 +186,8 @@ const Courses = () => {
                 onChange={(e) => setSelectedPricing(e.target.value)}
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
-                <option value="" disabled>All Pricing</option>
-                {pricingOptions.map(option => (
+                <option value="All">All Pricing</option>
+                {pricingOptions.slice(1).map(option => (
                   <option key={option} value={option}>{option}</option>
                 ))}
               </select>
