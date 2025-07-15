@@ -111,9 +111,14 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-30 text-center max-w-4xl mx-auto px-6 py-10">
-        <h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-gradient animate-fade-in-up">
-          Azhizen <span className="text-cream-100">Academy</span>
-        </h1>
+<h1 className="font-serif text-5xl md:text-7xl font-bold mb-4 text-white text-outline-white">
+  Azhizen <span className="text-cream-100">Academy</span>
+</h1>
+
+
+
+
+
         <h2
           className="text-3xl md:text-5xl font-semibold mb-2 text-gold-400 animate-fade-in-up"
           style={{ animationDelay: '0.1s' }}
@@ -140,7 +145,7 @@ const HeroSection = () => {
         >
           <a
             href={slides[active].ctaUrl}
-            className="bg-gradient-to-r from-royal-600 to-maroon-600 hover:from-royal-700 hover:to-maroon-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
+            className="bg-gold-400 text-black px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 luxury-shadow"
           >
             {slides[active].ctaText}
           </a>

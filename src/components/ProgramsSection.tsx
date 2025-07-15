@@ -17,7 +17,7 @@ const ProgramsSection = () => {
         </div>
         
         <div className="flex justify-center">
-          <div className="max-w-2xl scroll-reveal">
+          <div className="max-w-4xl scroll-reveal">
             <div className="bg-white/80 backdrop-blur-sm p-10 rounded-2xl luxury-shadow hover:transform hover:scale-105 transition-all duration-300 border border-white/50">
               <div className="mb-6">
                 <h3 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-dark-blue-600 leading-[1.2] overflow-visible">
