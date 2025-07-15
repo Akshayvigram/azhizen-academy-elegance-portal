@@ -98,46 +98,45 @@ const CohortProgram = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <Navigation />
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-royal-950 to-maroon-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-dark-blue-900 via-dark-blue-800 to-light-blue-600" />
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=6000&q=80')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-  <h1 className="font-bold text-4xl lg:text-6xl leading-tight mb-4">
-    <span className="bg-gradient-to-r from-[#B6203D] to-[#FFD447] bg-clip-text text-transparent">
-      From Zero to Skilled
-    </span>
-    <br />
-    <span className="text-cream-100">
-      Your Career Starts Here
-    </span>
-  </h1>
+          <h1 className="font-bold text-4xl lg:text-6xl leading-tight mb-4">
+            <span className="bg-gradient-to-r from-light-blue-300 to-light-blue-500 bg-clip-text text-transparent">
+              From Zero to Skilled
+            </span>
+            <br />
+            <span className="text-cream-100">
+              Your Career Starts Here
+            </span>
+          </h1>
 
-  <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-    Join our exclusive cohort program for 3rd to 6th semester students to gain real-world skills, 
-    internships, and project experience that transforms you into an industry-ready professional.
-  </p>
+          <p className="text-xl md:text-2xl text-cream-200 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            Join our exclusive cohort program for 3rd to 6th semester students to gain real-world skills, 
+            internships, and project experience that transforms you into an industry-ready professional.
+          </p>
 
-  <Button 
-    onClick={handleApplyNow}
-    className="bg-gradient-to-r from-[#9D5FFF] to-[#E04B4B] hover:from-[#8B3DFF] hover:to-[#CD2F2F] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg animate-fade-in-up"
-    style={{ animationDelay: '0.6s' }}
-  >
-    Apply Now
-  </Button>
-</div>
-
+          <Button 
+            onClick={handleApplyNow}
+            className="bg-gradient-to-r from-light-blue-500 to-light-blue-600 hover:from-light-blue-600 hover:to-light-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg animate-fade-in-up"
+            style={{ animationDelay: '0.6s' }}
+          >
+            Apply Now
+          </Button>
+        </div>
       </section>
 
       {/* About the Cohort Program */}
-      <section className="section-padding bg-gradient-to-b from-cream-50 to-cream-100">
+      <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto text-center scroll-reveal">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-royal-900">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-dark-blue-600">
             About the Cohort Program
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed">
@@ -150,10 +149,10 @@ const CohortProgram = () => {
       </section>
 
       {/* Program Timeline */}
-      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" >
+      <section className="section-padding bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-dark-blue-600">
               Program Timeline
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -171,7 +170,7 @@ const CohortProgram = () => {
                 <div className={`w-20 h-20 bg-gradient-to-r ${phase.color} rounded-full flex items-center justify-center mx-auto mb-6 luxury-shadow`}>
                   <phase.icon className="text-white" size={32} />
                 </div>
-                <h3 className="font-serif text-2xl font-bold mb-2 text-royal-700">
+                <h3 className="font-serif text-2xl font-bold mb-2 text-dark-blue-600">
                   {phase.phase}
                 </h3>
                 <p className="text-gray-600 font-semibold mb-4">{phase.semester}</p>
@@ -219,7 +218,7 @@ const CohortProgram = () => {
       </section>
 
       {/* Internships & Certification */}
-      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800"style={{backgroundColor: '#EFF6FF'}}>
+      <section className="section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#EFF6FF'}}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
@@ -293,7 +292,7 @@ const CohortProgram = () => {
       </section>
 
       {/* Outcomes */}
-      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#F9FAFB'}}>
+      <section className="section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#F9FAFB'}}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">
@@ -347,7 +346,7 @@ const CohortProgram = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className= "section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#EFF6FF'}}>
+      <section className="section-padding bg-gradient-to-b from-slate-200 to-slate-300 text-gray-800" style={{backgroundColor: '#EFF6FF'}}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-royal-900">

@@ -1,29 +1,31 @@
+
 import React from 'react';
+import { Target, Lightbulb, Shield, Rocket } from 'lucide-react';
 
 const ValuesSection = () => {
   const values = [
     {
       title: "Excellence",
       description: "We pursue the highest standards in education, continuously raising the bar for academic and professional achievement.",
-      icon: "🎯",
+      icon: Target,
       image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Innovation",
       description: "We embrace cutting-edge methodologies and technologies to create dynamic learning experiences.",
-      icon: "💡",
+      icon: Lightbulb,
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80"
     },
     {
       title: "Integrity",
       description: "We uphold the highest ethical standards and foster honest, transparent relationships with all stakeholders.",
-      icon: "🛡",
+      icon: Shield,
       image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Empowerment",
       description: "We believe in unlocking human potential and providing tools for personal and professional growth.",
-      icon: "🚀",
+      icon: Rocket,
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
     }
   ];
@@ -55,7 +57,9 @@ const ValuesSection = () => {
               />
               
               <div className="relative z-10">
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{value.icon}</div>
+                <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <value.icon className="w-10 h-10 text-royal-600 group-hover:text-white transition-colors duration-300" />
+                </div>
                 <h3 className="font-serif text-2xl font-bold mb-4 text-royal-900 group-hover:text-white transition-colors duration-300">
                   {value.title}
                 </h3>
