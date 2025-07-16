@@ -149,7 +149,7 @@ const CohortProgram = () => {
       </section>
 
       {/* Program Timeline */}
-      <section className="section-padding bg-gradient-to-b from-gray-50 to-gray-100">
+      <section className="section-padding bg-gradient-to-b from-slate-200 to-slate-300">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-dark-blue-600">

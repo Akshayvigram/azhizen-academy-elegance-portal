@@ -227,7 +227,7 @@ const FeaturedCoursesSection = () => {
         </div>
 
         {/* Statistics Section */}
-        <div className="mb-12 flex justify-center">
+        {/* <div className="mb-12 flex justify-center">
           <div className="bg-dark-blue-900 rounded-2xl p-8 md:p-12 luxury-shadow max-w-4xl w-full">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {statistics.map((stat, index) => (
@@ -247,7 +247,7 @@ const FeaturedCoursesSection = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         
         <div className="text-center">
           <Button 

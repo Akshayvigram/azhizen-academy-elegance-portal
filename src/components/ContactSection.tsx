@@ -111,7 +111,7 @@ const ContactSection = () => {
             </div>
 
             {/* Quick Stats */}
-            <Card className="bg-gradient-to-r from-dark-blue-600 to-light-blue-600 border-0 luxury-shadow">
+            {/* <Card className="bg-gradient-to-r from-dark-blue-600 to-light-blue-600 border-0 luxury-shadow">
               <CardContent className="p-6">
                 <div className="grid grid-cols-3 gap-4 text-center text-white">
                   <div>
@@ -130,7 +130,7 @@ const ContactSection = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
 
           {/* Contact Form - Enhanced */}
