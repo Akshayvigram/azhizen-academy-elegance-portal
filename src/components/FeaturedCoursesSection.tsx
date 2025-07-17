@@ -9,11 +9,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 1,
       title: "Generative AI with Python - Prompt Engineering",
-      instructor: "Dr. Rajesh Kumar",
-      rating: 4.8,
-      studentCount: 1250,
       description: "Applied Machine Learning with ChatGPT, LLM Integrations (LangChain / RAG) - Data Analysis (Pandas, NumPy, Matplotlib)",
-      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "AI / ML / Data Science",
@@ -23,11 +19,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 2,
       title: "Embedded C & RTOS for Beginners - IoT with ESP32",
-      instructor: "Prof. Priya Sharma",
-      rating: 4.9,
-      studentCount: 980,
       description: "Cloud (Firebase, Azure) - LoRa, MQTT, Edge Node Communication - Core-engineering focused, job-market ready",
-      price: "xxxx",
       duration: "16 weeks",
       level: "Beginner",
       category: "Embedded Systems & IoT",
@@ -37,11 +29,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 3,
       title: "Full Stack Web Development",
-      instructor: "Arjun Menon",
-      rating: 4.7,
-      studentCount: 750,
       description: "Frontend Dev with React + Tailwind - Next.js with TypeScript - Backend with Node.js + MongoDB - Web3 DApps with Solidity & Hardhat - DevOps for Web Apps (CI/CD, Docker)",
-      price: "xxxx",
       duration: "10 weeks",
       level: "Intermediate",
       category: "Full Stack & Web Development",
@@ -51,11 +39,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 4,
       title: "ROS2 with Python / C++ - Arduino + Sensors & Actuators",
-      instructor: "Dr. Sneha Patel",
-      rating: 4.6,
-      studentCount: 650,
       description: "Projects - Raspberry Pi Automation - Vision Navigation (OpenCV) - AI-powered Robotics (YOLO, TensorFlow Lite)",
-      price: "xxxx",
       duration: "14 weeks",
       level: "Intermediate",
       category: "Robotics & Mechatronics",
@@ -65,11 +49,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 5,
       title: "VHDL/Verilog for Beginners - ASIC Flow using Synopsys Tools",
-      instructor: "Vikram Singh",
-      rating: 4.5,
-      studentCount: 580,
       description: "FPGA-based System Design - Cadence Design Flow - Python for VLSI Test Automation. Aligned with India Semiconductor Mission",
-      price: "xxxx",
       duration: "15 weeks",
       level: "Advanced",
       category: "VLSI & Chip Design",
@@ -79,11 +59,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 6,
       title: "CEH (Certified Ethical Hacking) Prep - Bug Bounty & Web Security",
-      instructor: "Ravi Kumar",
-      rating: 4.8,
-      studentCount: 2100,
       description: "Penetration Testing - Network Security Essentials - Linux Hardening - Digital Forensics Basics. High-demand across government & private sectors",
-      price: "xxxx",
       duration: "8 weeks",
       level: "Beginner",
       category: "Cybersecurity",
@@ -93,11 +69,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 7,
       title: "AI for Edge Devices / TinyML",
-      instructor: "Dr. Ankit Sharma",
-      rating: 4.6,
-      studentCount: 480,
       description: "TensorFlow Lite, Edge AI deployment, Microcontroller ML, Optimization techniques for resource-constrained devices",
-      price: "xxxx",
       duration: "10 weeks",
       level: "Advanced",
       category: "AI / ML / Data Science",
@@ -107,11 +79,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 8,
       title: "Industrial Automation with PLC & SCADA",
-      instructor: "Eng. Rohit Verma",
-      rating: 4.7,
-      studentCount: 620,
       description: "Programmable Logic Controllers, SCADA systems, Industrial communication protocols, Factory automation",
-      price: "xxxx",
       duration: "14 weeks",
       level: "Intermediate",
       category: "Embedded Systems & IoT",
@@ -121,11 +89,7 @@ const FeaturedCoursesSection = () => {
     {
       id: 9,
       title: "IoT Security & OTA Updates",
-      instructor: "Dr. Kavya Singh",
-      rating: 4.5,
-      studentCount: 390,
       description: "IoT device security, Over-the-Air updates, Secure communication protocols, Device authentication",
-      price: "xxxx",
       duration: "12 weeks",
       level: "Advanced",
       category: "Embedded Systems & IoT",
@@ -213,12 +177,6 @@ const FeaturedCoursesSection = () => {
                 <p className="text-gray-700 text-sm leading-relaxed">
                   {course.description}
                 </p>
-                
-                <div className="flex items-center justify-center pt-2">
-                  <div className="text-2xl font-bold text-dark-blue-600">
-                    ₹{course.price}
-                  </div>
-                </div>
               </CardContent>
             </Card>
           ))}

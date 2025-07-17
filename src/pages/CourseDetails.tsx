@@ -281,9 +281,6 @@ const CourseDetails = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="text-3xl font-bold text-light-blue-300">
-                  ₹{course.price}
-                </div>
                 <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
                   <Bell className="mr-2" size={20} />
                   Get Notified When Available
@@ -412,7 +409,7 @@ const CourseDetails = () => {
               <div className="sticky top-6">
                 <Button size="lg" className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
                   <Bell className="mr-2" size={20} />
-                  Get Notified - ₹{course.price}
+                  Get Notified
                 </Button>
               </div>
             </div>
