@@ -464,8 +464,7 @@ const Courses = () => {
   const pricingOptions = ['All', 'Free', 'Paid'];
 
   const filteredCourses = courses.filter(course => {
-    const matchesSearch = course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         course.instructor.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = course.title.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || course.category === selectedCategory;
     const matchesLevel = selectedLevel === 'All' || course.level === selectedLevel;
     
@@ -595,19 +594,10 @@ const Courses = () => {
                   <CardTitle className="text-xl font-bold text-dark-blue-900 mb-2 group-hover:text-light-blue-600 transition-colors duration-300">
                     {course.title}
                   </CardTitle>
-                  <p className="text-gray-600 text-sm">by {course.instructor}</p>
                 </CardHeader>
                 
                 <CardContent className="space-y-4">
-                  <div className="flex items-center justify-between text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      <span className="font-semibold">{course.rating}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Users className="w-4 h-4" />
-                      <span>{course.studentCount} interested</span>
-                    </div>
+                  <div className="flex items-center justify-center text-sm text-gray-600">
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       <span>{course.duration}</span>
@@ -618,18 +608,10 @@ const Courses = () => {
                     {course.description}
                   </p>
                   
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                  <div className="flex items-center justify-center pt-4 border-t border-gray-100">
                     <div className="text-2xl font-bold text-dark-blue-600">
                       ₹{course.price}
                     </div>
-                    <Button 
-                      onClick={() => window.location.href = `/courses/${course.id}`}
-                      size="sm"
-                      className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
-                    >
-                      <Bell size={16} className="mr-1" />
-                      Notify Me
-                    </Button>
                   </div>
                 </CardContent>
               </Card>

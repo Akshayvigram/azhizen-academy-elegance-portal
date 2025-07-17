@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Star, Users, Clock, ArrowRight, GraduationCap, TrendingUp, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -199,19 +200,10 @@ const FeaturedCoursesSection = () => {
                 <CardTitle className="text-xl font-bold text-dark-blue-900 mb-2">
                   {course.title}
                 </CardTitle>
-                <p className="text-gray-600 text-sm">by {course.instructor}</p>
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <div className="flex items-center justify-between text-sm text-gray-600">
-                  <div className="flex items-center gap-1">
-                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    <span className="font-semibold">{course.rating}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Users className="w-4 h-4" />
-                    <span>{course.studentCount} interested</span>
-                  </div>
+                <div className="flex items-center justify-center text-sm text-gray-600">
                   <div className="flex items-center gap-1">
                     <Clock className="w-4 h-4" />
                     <span>{course.duration}</span>
@@ -222,19 +214,10 @@ const FeaturedCoursesSection = () => {
                   {course.description}
                 </p>
                 
-                <div className="flex items-center justify-between pt-2">
+                <div className="flex items-center justify-center pt-2">
                   <div className="text-2xl font-bold text-dark-blue-600">
                     ₹{course.price}
                   </div>
-                  <Button 
-                    onClick={() => window.location.href = `/courses/${course.id}`}
-                    size="sm"
-                    disabled={course.comingSoon}
-                    className={course.comingSoon ? "opacity-50 cursor-not-allowed" : ""}
-                  >
-                    {course.comingSoon ? "Notify Me" : "View Course"}
-                    <ArrowRight size={16} />
-                  </Button>
                 </div>
               </CardContent>
             </Card>

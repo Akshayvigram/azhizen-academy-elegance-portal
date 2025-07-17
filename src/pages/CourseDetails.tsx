@@ -276,14 +276,6 @@ const CourseDetails = () => {
               </p>
               <div className="flex items-center gap-6 mb-8">
                 <div className="flex items-center gap-2">
-                  <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  <span className="font-semibold">{course.rating}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-5 h-5" />
-                  <span>{course.studentCount} interested</span>
-                </div>
-                <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5" />
                   <span>{course.duration}</span>
                 </div>
@@ -374,27 +366,12 @@ const CourseDetails = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Instructor:</span>
-                    <span className="font-semibold">{course.instructor}</span>
-                  </div>
-                  <div className="flex justify-between">
                     <span className="text-gray-600">Duration:</span>
                     <span className="font-semibold">{course.duration}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Level:</span>
                     <span className="font-semibold">{course.level}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Interested:</span>
-                    <span className="font-semibold">{course.studentCount}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Expected Rating:</span>
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                      <span className="font-semibold">{course.rating}</span>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
