@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Star, Users, Clock, Search, ArrowRight } from 'lucide-react';
+import { Star, Users, Clock, Search, ArrowRight, Bell } from 'lucide-react';
 
 const Courses = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,16 +15,17 @@ const Courses = () => {
     // AI / ML / Data Science (6 courses)
     {
       id: 1,
-      title: "Generative AI with Python",
+      title: "Generative AI with Python - Prompt Engineering",
       instructor: "Dr. Rajesh Kumar",
       rating: 4.8,
       studentCount: 1250,
-      description: "Master generative AI techniques using Python, including GPT models, text generation, and creative AI applications.",
-      price: 12999,
+      description: "Applied Machine Learning with ChatGPT, LLM Integrations (LangChain / RAG) - Data Analysis (Pandas, NumPy, Matplotlib)",
+      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "AI / ML / Data Science",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 2,
@@ -34,11 +34,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 980,
       description: "Learn advanced prompt engineering techniques for AI models, optimization strategies, and real-world applications.",
-      price: 9999,
+      price: "xxxx",
       duration: "8 weeks",
       level: "Beginner",
       category: "AI / ML / Data Science",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 3,
@@ -47,11 +48,12 @@ const Courses = () => {
       rating: 4.9,
       studentCount: 1450,
       description: "Comprehensive course on machine learning with ChatGPT API integration and large language model implementations.",
-      price: 15999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Advanced",
       category: "AI / ML / Data Science",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 4,
@@ -60,11 +62,12 @@ const Courses = () => {
       rating: 4.6,
       studentCount: 750,
       description: "Build advanced AI applications using LangChain framework and Retrieval-Augmented Generation techniques.",
-      price: 13999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Intermediate",
       category: "AI / ML / Data Science",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 5,
@@ -73,11 +76,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 2100,
       description: "Master data analysis and visualization using Python's most powerful libraries for data science.",
-      price: 8999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Beginner",
       category: "AI / ML / Data Science",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 6,
@@ -86,11 +90,12 @@ const Courses = () => {
       rating: 4.5,
       studentCount: 580,
       description: "Deploy AI models on edge devices and microcontrollers using TinyML techniques and optimization strategies.",
-      price: 11999,
+      price: "xxxx",
       duration: "15 weeks",
       level: "Advanced",
       category: "AI / ML / Data Science",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
 
     // Embedded Systems & IoT (5 courses)
@@ -101,11 +106,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 920,
       description: "Learn embedded C programming and Real-Time Operating Systems from scratch with hands-on projects.",
-      price: 12999,
+      price: "xxxx",
       duration: "16 weeks",
       level: "Beginner",
       category: "Embedded Systems & IoT",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 8,
@@ -114,11 +120,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 1100,
       description: "Build IoT solutions using ESP32 microcontroller with cloud integration using Firebase and Azure platforms.",
-      price: 14999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Intermediate",
       category: "Embedded Systems & IoT",
-      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 9,
@@ -127,11 +134,12 @@ const Courses = () => {
       rating: 4.6,
       studentCount: 650,
       description: "Master wireless communication protocols for IoT including LoRa, MQTT, and edge computing solutions.",
-      price: 10999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Intermediate",
       category: "Embedded Systems & IoT",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 10,
@@ -140,11 +148,12 @@ const Courses = () => {
       rating: 4.9,
       studentCount: 720,
       description: "Learn industrial automation using Programmable Logic Controllers and SCADA systems for manufacturing.",
-      price: 16999,
+      price: "xxxx",
       duration: "18 weeks",
       level: "Advanced",
       category: "Embedded Systems & IoT",
-      image: "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 11,
@@ -153,11 +162,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 480,
       description: "Implement security measures for IoT devices and Over-the-Air update mechanisms for embedded systems.",
-      price: 13999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Advanced",
       category: "Embedded Systems & IoT",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
 
     // Full Stack & Web Development (5 courses)
@@ -168,11 +178,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 1850,
       description: "Build modern, responsive web interfaces using React and Tailwind CSS with best practices and design patterns.",
-      price: 9999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Beginner",
       category: "Full Stack & Web Development",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 13,
@@ -181,11 +192,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 1200,
       description: "Master full-stack development with Next.js framework and TypeScript for scalable web applications.",
-      price: 12999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "Full Stack & Web Development",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 14,
@@ -194,11 +206,12 @@ const Courses = () => {
       rating: 4.6,
       studentCount: 950,
       description: "Build robust backend APIs using Node.js, Express, and MongoDB with authentication and security best practices.",
-      price: 11999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Intermediate",
       category: "Full Stack & Web Development",
-      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 15,
@@ -207,11 +220,12 @@ const Courses = () => {
       rating: 4.5,
       studentCount: 680,
       description: "Develop decentralized applications using Solidity smart contracts and Hardhat development environment.",
-      price: 18999,
+      price: "xxxx",
       duration: "16 weeks",
       level: "Advanced",
       category: "Full Stack & Web Development",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 16,
@@ -220,11 +234,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 850,
       description: "Implement DevOps practices for web applications including CI/CD pipelines, Docker containerization, and deployment.",
-      price: 14999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Advanced",
       category: "Full Stack & Web Development",
-      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
 
     // Robotics & Mechatronics (5 courses)
@@ -235,11 +250,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 540,
       description: "Master Robot Operating System 2 with both Python and C++ programming for advanced robotics applications.",
-      price: 15999,
+      price: "xxxx",
       duration: "16 weeks",
       level: "Advanced",
       category: "Robotics & Mechatronics",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 18,
@@ -248,11 +264,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 1350,
       description: "Build exciting robotics projects using Arduino microcontroller with various sensors and actuators.",
-      price: 8999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Beginner",
       category: "Robotics & Mechatronics",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 19,
@@ -261,11 +278,12 @@ const Courses = () => {
       rating: 4.6,
       studentCount: 890,
       description: "Create home and industrial automation systems using Raspberry Pi with IoT integration and remote control.",
-      price: 10999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "Robotics & Mechatronics",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 20,
@@ -274,11 +292,12 @@ const Courses = () => {
       rating: 4.9,
       studentCount: 620,
       description: "Implement computer vision solutions for robotic navigation using OpenCV and advanced image processing techniques.",
-      price: 13999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Advanced",
       category: "Robotics & Mechatronics",
-      image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 21,
@@ -287,11 +306,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 450,
       description: "Integrate AI and machine learning into robotics using YOLO object detection and TensorFlow Lite for edge computing.",
-      price: 16999,
+      price: "xxxx",
       duration: "16 weeks",
       level: "Advanced",
       category: "Robotics & Mechatronics",
-      image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
 
     // VLSI & Chip Design (5 courses)
@@ -302,11 +322,12 @@ const Courses = () => {
       rating: 4.6,
       studentCount: 480,
       description: "Learn hardware description languages VHDL and Verilog for digital circuit design and FPGA programming.",
-      price: 12999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Beginner",
       category: "VLSI & Chip Design",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 23,
@@ -315,11 +336,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 320,
       description: "Master ASIC design flow using industry-standard Synopsys tools for synthesis, place and route, and verification.",
-      price: 18999,
+      price: "xxxx",
       duration: "18 weeks",
       level: "Advanced",
       category: "VLSI & Chip Design",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 24,
@@ -328,11 +350,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 420,
       description: "Design and implement digital systems on FPGA platforms with hands-on projects and real-world applications.",
-      price: 15999,
+      price: "xxxx",
       duration: "16 weeks",
       level: "Intermediate",
       category: "VLSI & Chip Design",
-      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 25,
@@ -341,11 +364,12 @@ const Courses = () => {
       rating: 4.5,
       studentCount: 280,
       description: "Learn complete IC design flow using Cadence tools including schematic design, layout, and verification.",
-      price: 19999,
+      price: "xxxx",
       duration: "20 weeks",
       level: "Advanced",
       category: "VLSI & Chip Design",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 26,
@@ -354,11 +378,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 380,
       description: "Automate VLSI testing and verification processes using Python scripting and industry-standard methodologies.",
-      price: 13999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "VLSI & Chip Design",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
 
     // Cybersecurity (5 courses)
@@ -369,11 +394,12 @@ const Courses = () => {
       rating: 4.9,
       studentCount: 2100,
       description: "Comprehensive preparation for Certified Ethical Hacker certification with hands-on labs and real-world scenarios.",
-      price: 0,
+      price: "xxxx",
       duration: "8 weeks",
       level: "Beginner",
       category: "Cybersecurity",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 28,
@@ -382,11 +408,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 1450,
       description: "Learn bug bounty hunting techniques and web application security testing methodologies for ethical hacking.",
-      price: 11999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Intermediate",
       category: "Cybersecurity",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 29,
@@ -395,11 +422,12 @@ const Courses = () => {
       rating: 4.7,
       studentCount: 980,
       description: "Master network security fundamentals including firewalls, VPNs, intrusion detection, and security protocols.",
-      price: 12999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "Cybersecurity",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 30,
@@ -408,11 +436,12 @@ const Courses = () => {
       rating: 4.6,
       studentCount: 720,
       description: "Secure Linux systems through hardening techniques, access controls, and security best practices.",
-      price: 9999,
+      price: "xxxx",
       duration: "8 weeks",
       level: "Beginner",
       category: "Cybersecurity",
-      image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     },
     {
       id: 31,
@@ -421,11 +450,12 @@ const Courses = () => {
       rating: 4.8,
       studentCount: 580,
       description: "Learn digital forensics fundamentals including evidence collection, analysis, and reporting for cybercrime investigation.",
-      price: 14999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Advanced",
       category: "Cybersecurity",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      comingSoon: true
     }
   ];
 
@@ -438,11 +468,8 @@ const Courses = () => {
                          course.instructor.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || course.category === selectedCategory;
     const matchesLevel = selectedLevel === 'All' || course.level === selectedLevel;
-    const matchesPricing = selectedPricing === 'All' || 
-                          (selectedPricing === 'Free' && course.price === 0) ||
-                          (selectedPricing === 'Paid' && course.price > 0);
     
-    return matchesSearch && matchesCategory && matchesLevel && matchesPricing;
+    return matchesSearch && matchesCategory && matchesLevel;
   });
 
   return (
@@ -461,17 +488,17 @@ const Courses = () => {
           <div className="relative z-10 text-center">
             <div className="inline-block mb-6">
               <span className="bg-light-blue-500/20 text-light-blue-200 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm border border-light-blue-400/30">
-                Our Courses
+                Coming Soon
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Explore Our{' '}
               <span className="bg-gradient-to-r from-light-blue-300 to-light-blue-500 bg-clip-text text-transparent">
-                Courses
+                Upcoming Courses
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Discover comprehensive courses designed by industry experts to advance your career.
+              Get ready for comprehensive courses designed by industry experts. Be the first to know when they launch!
             </p>
           </div>
         </div>
@@ -486,7 +513,7 @@ const Courses = () => {
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
               <input
                 type="text"
-                placeholder="Search courses..."
+                placeholder="Search upcoming courses..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent transition-all duration-300 bg-gray-50 focus:bg-white"
@@ -501,9 +528,12 @@ const Courses = () => {
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
                 <option value="All">All Categories</option>
-                {categories.slice(1).map(category => (
-                  <option key={category} value={category}>{category}</option>
-                ))}
+                <option value="AI / ML / Data Science">AI / ML / Data Science</option>
+                <option value="Embedded Systems & IoT">Embedded Systems & IoT</option>
+                <option value="Full Stack & Web Development">Full Stack & Web Development</option>
+                <option value="Robotics & Mechatronics">Robotics & Mechatronics</option>
+                <option value="VLSI & Chip Design">VLSI & Chip Design</option>
+                <option value="Cybersecurity">Cybersecurity</option>
               </select>
 
               <select
@@ -512,20 +542,9 @@ const Courses = () => {
                 className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
               >
                 <option value="All">All Levels</option>
-                {levels.slice(1).map(level => (
-                  <option key={level} value={level}>{level}</option>
-                ))}
-              </select>
-
-              <select
-                value={selectedPricing}
-                onChange={(e) => setSelectedPricing(e.target.value)}
-                className="px-6 py-3 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-light-blue-500 focus:border-transparent bg-gray-50 focus:bg-white transition-all duration-300 font-medium"
-              >
-                <option value="All">All Pricing</option>
-                {pricingOptions.slice(1).map(option => (
-                  <option key={option} value={option}>{option}</option>
-                ))}
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
               </select>
             </div>
           </div>
@@ -537,7 +556,7 @@ const Courses = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <p className="text-gray-600 text-lg font-medium">
-              Showing <span className="text-dark-blue-600 font-semibold">{filteredCourses.length}</span> of <span className="text-dark-blue-600 font-semibold">{courses.length}</span> courses
+              Showing <span className="text-dark-blue-600 font-semibold">{filteredCourses.length}</span> of <span className="text-dark-blue-600 font-semibold">{courses.length}</span> upcoming courses
             </p>
           </div>
 
@@ -545,7 +564,7 @@ const Courses = () => {
             {filteredCourses.map((course) => (
               <Card 
                 key={course.id}
-                className="group hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border-0 bg-white overflow-hidden"
+                className="group hover:transform hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl border-0 bg-white overflow-hidden relative"
               >
                 <div className="relative overflow-hidden">
                   <img 
@@ -565,13 +584,11 @@ const Courses = () => {
                     </span>
                   </div>
                   
-                  {course.price === 0 && (
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
-                        FREE
-                      </span>
-                    </div>
-                  )}
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm">
+                      Coming Soon
+                    </span>
+                  </div>
                 </div>
                 
                 <CardHeader className="pb-3">
@@ -589,7 +606,7 @@ const Courses = () => {
                     </div>
                     <div className="flex items-center gap-1">
                       <Users className="w-4 h-4" />
-                      <span>{course.studentCount} students</span>
+                      <span>{course.studentCount} interested</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
@@ -602,19 +619,16 @@ const Courses = () => {
                   </p>
                   
                   <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <div className="text-2xl font-bold">
-                      {course.price === 0 ? (
-                        <span className="text-emerald-600">FREE</span>
-                      ) : (
-                        <span className="text-dark-blue-600">₹{course.price.toLocaleString()}</span>
-                      )}
+                    <div className="text-2xl font-bold text-dark-blue-600">
+                      ₹{course.price}
                     </div>
                     <Button 
                       onClick={() => window.location.href = `/courses/${course.id}`}
                       size="sm"
+                      className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
                     >
-                      View Details
-                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
+                      <Bell size={16} className="mr-1" />
+                      Notify Me
                     </Button>
                   </div>
                 </CardContent>

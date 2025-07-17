@@ -1,17 +1,15 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Star, Users, Clock, CheckCircle, PlayCircle, BookOpen, Award } from 'lucide-react';
+import { Star, Users, Clock, CheckCircle, PlayCircle, BookOpen, Award, Bell } from 'lucide-react';
 
 const CourseDetails = () => {
   const { id } = useParams();
   
   const courses = [
-    // AI / ML / Data Science
     {
       id: 1,
       title: "Generative AI with Python - Prompt Engineering",
@@ -20,7 +18,7 @@ const CourseDetails = () => {
       studentCount: 1250,
       description: "Applied Machine Learning with ChatGPT, LLM Integrations (LangChain / RAG) - Data Analysis (Pandas, NumPy, Matplotlib)",
       longDescription: "Master the art of Generative AI and prompt engineering with our comprehensive course. Learn to build practical applications using Python, ChatGPT, and various LLM integrations including LangChain and RAG systems.",
-      price: 12999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Intermediate",
       category: "AI / ML / Data Science",
@@ -34,7 +32,8 @@ const CourseDetails = () => {
         "RAG Implementation",
         "Data Analysis with Pandas & NumPy",
         "Visualization with Matplotlib"
-      ]
+      ],
+      comingSoon: true
     },
     {
       id: 7,
@@ -44,7 +43,7 @@ const CourseDetails = () => {
       studentCount: 480,
       description: "TensorFlow Lite, Edge AI deployment, Microcontroller ML, Optimization techniques for resource-constrained devices",
       longDescription: "Learn to deploy AI models on edge devices and microcontrollers. Master TinyML techniques for resource-constrained environments.",
-      price: 11999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Advanced",
       category: "AI / ML / Data Science",
@@ -58,9 +57,9 @@ const CourseDetails = () => {
         "Power Management",
         "Real-time Processing",
         "IoT Integration"
-      ]
+      ],
+      comingSoon: true
     },
-    // Embedded Systems & IoT
     {
       id: 2,
       title: "Embedded C & RTOS for Beginners - IoT with ESP32",
@@ -69,7 +68,7 @@ const CourseDetails = () => {
       studentCount: 980,
       description: "Cloud (Firebase, Azure) - LoRa, MQTT, Edge Node Communication - Core-engineering focused, job-market ready",
       longDescription: "Dive deep into embedded systems programming with C and Real-Time Operating Systems. Learn IoT development with ESP32, cloud integration, and industry-standard protocols.",
-      price: 15999,
+      price: "xxxx",
       duration: "16 weeks",
       level: "Beginner",
       category: "Embedded Systems & IoT",
@@ -83,7 +82,8 @@ const CourseDetails = () => {
         "Sensor Interfacing",
         "Wireless Communication",
         "Industrial IoT Projects"
-      ]
+      ],
+      comingSoon: true
     },
     {
       id: 8,
@@ -93,7 +93,7 @@ const CourseDetails = () => {
       studentCount: 620,
       description: "Programmable Logic Controllers, SCADA systems, Industrial communication protocols, Factory automation",
       longDescription: "Master industrial automation with PLC and SCADA systems. Learn to design and implement factory automation solutions.",
-      price: 14999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Intermediate",
       category: "Embedded Systems & IoT",
@@ -107,7 +107,8 @@ const CourseDetails = () => {
         "Process Control",
         "Safety Systems",
         "Maintenance Strategies"
-      ]
+      ],
+      comingSoon: true
     },
     {
       id: 9,
@@ -117,7 +118,7 @@ const CourseDetails = () => {
       studentCount: 390,
       description: "IoT device security, Over-the-Air updates, Secure communication protocols, Device authentication",
       longDescription: "Learn to secure IoT devices and implement Over-the-Air update mechanisms. Master security protocols and device authentication.",
-      price: 13999,
+      price: "xxxx",
       duration: "12 weeks",
       level: "Advanced",
       category: "Embedded Systems & IoT",
@@ -131,9 +132,9 @@ const CourseDetails = () => {
         "Vulnerability Assessment",
         "Security Testing",
         "Compliance Standards"
-      ]
+      ],
+      comingSoon: true
     },
-    // Full Stack & Web Development
     {
       id: 3,
       title: "Full Stack Web Development",
@@ -142,7 +143,7 @@ const CourseDetails = () => {
       studentCount: 750,
       description: "Frontend Dev with React + Tailwind - Next.js with TypeScript - Backend with Node.js + MongoDB - Web3 DApps with Solidity & Hardhat - DevOps for Web Apps (CI/CD, Docker)",
       longDescription: "Become a complete full-stack developer with our comprehensive program covering modern frontend and backend technologies, Web3 development, and DevOps practices.",
-      price: 8999,
+      price: "xxxx",
       duration: "10 weeks",
       level: "Intermediate",
       category: "Full Stack & Web Development",
@@ -156,9 +157,9 @@ const CourseDetails = () => {
         "Solidity Smart Contracts",
         "DevOps with Docker",
         "CI/CD Pipeline Setup"
-      ]
+      ],
+      comingSoon: true
     },
-    // Robotics & Mechatronics
     {
       id: 4,
       title: "ROS2 with Python / C++ - Arduino + Sensors & Actuators",
@@ -167,7 +168,7 @@ const CourseDetails = () => {
       studentCount: 650,
       description: "Projects - Raspberry Pi Automation - Vision Navigation (OpenCV) - AI-powered Robotics (YOLO, TensorFlow Lite)",
       longDescription: "Learn robotics programming with ROS2, combining Python and C++ for advanced robotic systems. Perfect for students and professionals working on innovation projects.",
-      price: 11999,
+      price: "xxxx",
       duration: "14 weeks",
       level: "Intermediate",
       category: "Robotics & Mechatronics",
@@ -181,9 +182,9 @@ const CourseDetails = () => {
         "AI in Robotics (YOLO, TensorFlow)",
         "Raspberry Pi Projects",
         "Autonomous Navigation"
-      ]
+      ],
+      comingSoon: true
     },
-    // VLSI & Chip Design
     {
       id: 5,
       title: "VHDL/Verilog for Beginners - ASIC Flow using Synopsys Tools",
@@ -192,7 +193,7 @@ const CourseDetails = () => {
       studentCount: 580,
       description: "FPGA-based System Design - Cadence Design Flow - Python for VLSI Test Automation. Aligned with India Semiconductor Mission",
       longDescription: "Master VLSI design with industry-standard tools and methodologies. This course is aligned with India's Semiconductor Mission and prepares you for chip design careers.",
-      price: 13999,
+      price: "xxxx",
       duration: "15 weeks",
       level: "Advanced",
       category: "VLSI & Chip Design",
@@ -206,9 +207,9 @@ const CourseDetails = () => {
         "Cadence Design Environment",
         "Python for VLSI Automation",
         "Semiconductor Industry Practices"
-      ]
+      ],
+      comingSoon: true
     },
-    // Cybersecurity
     {
       id: 6,
       title: "CEH (Certified Ethical Hacking) Prep - Bug Bounty & Web Security",
@@ -217,7 +218,7 @@ const CourseDetails = () => {
       studentCount: 2100,
       description: "Penetration Testing - Network Security Essentials - Linux Hardening - Digital Forensics Basics. High-demand across government & private sectors",
       longDescription: "Prepare for the Certified Ethical Hacker certification while learning practical cybersecurity skills. This course covers penetration testing, bug bounty hunting, and digital forensics.",
-      price: 0,
+      price: "xxxx",
       duration: "8 weeks",
       level: "Beginner",
       category: "Cybersecurity",
@@ -231,7 +232,8 @@ const CourseDetails = () => {
         "Bug Bounty Hunting",
         "Digital Forensics",
         "Security Report Writing"
-      ]
+      ],
+      comingSoon: true
     }
   ];
 
@@ -258,9 +260,12 @@ const CourseDetails = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="mb-4">
+              <div className="mb-4 flex gap-3">
                 <span className="bg-light-blue-500/20 text-light-blue-200 px-3 py-1 rounded-full text-sm font-medium">
                   {course.category}
+                </span>
+                <span className="bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-200 px-3 py-1 rounded-full text-sm font-medium border border-orange-400/30">
+                  Coming Soon
                 </span>
               </div>
               <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -276,7 +281,7 @@ const CourseDetails = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5" />
-                  <span>{course.studentCount} students</span>
+                  <span>{course.studentCount} interested</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5" />
@@ -284,15 +289,12 @@ const CourseDetails = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="text-3xl font-bold">
-                  {course.price === 0 ? (
-                    <span className="text-emerald-400">FREE</span>
-                  ) : (
-                    <span>₹{course.price.toLocaleString()}</span>
-                  )}
+                <div className="text-3xl font-bold text-light-blue-300">
+                  ₹{course.price}
                 </div>
-                <Button size="lg">
-                  Enroll Now
+                <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
+                  <Bell className="mr-2" size={20} />
+                  Get Notified When Available
                 </Button>
               </div>
             </div>
@@ -302,10 +304,13 @@ const CourseDetails = () => {
                 alt={course.title}
                 className="w-full h-80 object-cover rounded-2xl shadow-2xl"
               />
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <Button size="lg" className="rounded-full w-16 h-16 p-0">
-                  <PlayCircle size={32} />
-                </Button>
+              <div className="absolute inset-0 bg-dark-blue-900/20 rounded-2xl flex items-center justify-center">
+                <div className="text-center">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 mb-4 inline-block">
+                    <PlayCircle size={48} className="text-white" />
+                  </div>
+                  <p className="text-white font-semibold">Preview Coming Soon</p>
+                </div>
               </div>
             </div>
           </div>
@@ -322,14 +327,14 @@ const CourseDetails = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <BookOpen className="w-6 h-6" />
-                    Course Curriculum
+                    Course Curriculum (Preview)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     {course.curriculum.map((item, index) => (
                       <div key={index} className="flex items-center gap-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
-                        <CheckCircle className="w-5 h-5 text-green-500" />
+                        <CheckCircle className="w-5 h-5 text-orange-500" />
                         <span className="font-medium">{item}</span>
                       </div>
                     ))}
@@ -345,9 +350,18 @@ const CourseDetails = () => {
                   <p className="text-gray-700 leading-relaxed mb-4">
                     {course.longDescription}
                   </p>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed mb-4">
                     {course.description}
                   </p>
+                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Bell className="w-5 h-5 text-orange-600" />
+                      <span className="font-semibold text-orange-800">Coming Soon</span>
+                    </div>
+                    <p className="text-orange-700">
+                      This course is currently in development. Click "Get Notified" to be among the first to know when it launches!
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -372,11 +386,11 @@ const CourseDetails = () => {
                     <span className="font-semibold">{course.level}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Students:</span>
+                    <span className="text-gray-600">Interested:</span>
                     <span className="font-semibold">{course.studentCount}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Rating:</span>
+                    <span className="text-gray-600">Expected Rating:</span>
                     <div className="flex items-center gap-1">
                       <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       <span className="font-semibold">{course.rating}</span>
@@ -419,8 +433,9 @@ const CourseDetails = () => {
               </Card>
 
               <div className="sticky top-6">
-                <Button size="lg" className="w-full">
-                  Enroll Now - {course.price === 0 ? 'FREE' : `₹${course.price.toLocaleString()}`}
+                <Button size="lg" className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
+                  <Bell className="mr-2" size={20} />
+                  Get Notified - ₹{course.price}
                 </Button>
               </div>
             </div>
