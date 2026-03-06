@@ -11,6 +11,7 @@ import Courses from "./pages/Courses";
 import CourseDetails from "./pages/CourseDetails";
 import CohortProgram from "./pages/CohortProgram";
 import NotFound from "./pages/NotFound";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 const queryClient = new QueryClient();
 
