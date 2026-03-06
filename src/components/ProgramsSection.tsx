@@ -67,7 +67,7 @@ return (
         </div>
 
         {/* Card */}
-        <div className="flex justify-center mb-20">
+        <div className="flex justify-center mb-5">
           <div className="max-w-4xl scroll-reveal">
             <div className="bg-white p-10 rounded-2xl shadow-xl hover:transform hover:scale-105 transition-all duration-300 border border-gray-200">
               <div className="mb-6">

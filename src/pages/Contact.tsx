@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from '@/firebase';
+import { toast } from 'sonner';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,9 +16,12 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    setLoading(true); // disable button
 
     try {
       await addDoc(collection(db, "contactForm"), {
@@ -37,11 +41,11 @@ const Contact = () => {
           subject: formData.subject,
           FormMessage: formData.message,
         })
-      })
+      });
 
-      alert("Message sent successfully!");
+      // alert("Message sent successfully!");
+      toast.success("Message sent successfully")
 
-      // Clear form
       setFormData({
         name: "",
         email: "",
@@ -53,6 +57,8 @@ const Contact = () => {
       console.error("Error adding document: ", error);
       alert("Something went wrong!");
     }
+
+    setLoading(false); // enable button again
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -150,9 +156,10 @@ const Contact = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full"
+                    disabled={loading}
+                    className="w-full disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {loading ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
